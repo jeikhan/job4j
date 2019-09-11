@@ -2,9 +2,9 @@ package ru.job4j.condition;
 
 public class MultiMax {
     public int max(int first, int second, int third) {
-        boolean condition = false;
-        int firtosec = condition ? first : second;
-        int result = condition ? third : second;
+        int result, firstSecond;
+        firstSecond = first >= second ? first : second;
+	    result = firstSecond >= third ? firstSecond : third;
         return result;
     }
 }
