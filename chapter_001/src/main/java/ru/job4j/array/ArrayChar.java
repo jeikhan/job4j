@@ -7,7 +7,7 @@ package ru.job4j.array;
  *
  * @author Evgeniy Kapaev
  * @since 30.09.19
- * @version 1.0
+ * @version 1.1
  */
 public class ArrayChar {
 
@@ -21,13 +21,11 @@ public class ArrayChar {
      * @return result - возвращает true или false
      */
     public static boolean startsW(char[] word, char[] pref) {
-        boolean result = false;
+        boolean result = true;
         for (int i = 0; i < pref.length; i++) {
             if (pref[i] != word[i]) {
                 result = false;
                 break;
-            } else {
-                result = true;
             }
         }
         return result;
