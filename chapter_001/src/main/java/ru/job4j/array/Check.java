@@ -6,7 +6,7 @@ package ru.job4j.array;
  *
  * @author Evgeniy Kapaev
  * @since 27.09.19
- * @version 1.0
+ * @version 1.1
  */
 public class Check {
 
@@ -22,13 +22,11 @@ public class Check {
      *                  или false
      */
     public boolean mono(boolean[] data) {
-        boolean result = false;
+        boolean result = true;
         for (int i = 0; i < data.length; i++) {
             if (data[i] != data[0]) {
                 result = false;
                 break;
-            } else {
-                result = true;
             }
         }
         return result;
