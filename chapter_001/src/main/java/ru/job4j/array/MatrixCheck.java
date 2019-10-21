@@ -20,10 +20,8 @@ public class MatrixCheck {
             for (int cell = 0; cell < board.length; cell++) {
                 char sign = board[row][cell];
                 System.out.print(sign);
-                for (cell = 0; cell < board.length; cell++) {
-                    if (board[cell][cell] != board[0][0]) {
-                        result = true;
-                    }
+                if (board[cell][cell] != board[0][0]) {
+                    result = true;
                 }
             }
             System.out.println();
