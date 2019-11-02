@@ -22,8 +22,8 @@ public class FindLoopMod {
      */
     public static int indexOf(int[] data, int el, int start, int finish) {
         int rst = -1;
-        for(int i = start; start < finish; start++) {
-            if(data[start] == el) {
+        for (int i = start; start < finish; start++) {
+            if (data[start] == el) {
                 rst = start;
                 break;
             }

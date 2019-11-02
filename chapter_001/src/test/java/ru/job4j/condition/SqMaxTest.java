@@ -6,23 +6,23 @@ import static org.junit.Assert.assertThat;
 
 public class SqMaxTest {
     @Test
-    public void WhenThirdMax() {
+    public void whenThirdMax() {
         SqMax check = new SqMax();
         int result = check.max(3, 2, 8, 0);
         assertThat(result, is(8));
     }
 
     @Test
-    public void WhenFirstMax() {
+    public void whenFirstMax() {
         SqMax check = new SqMax();
         int result = check.max(8, 2, 3, 0);
         assertThat(result, is(8));
     }
 
     @Test
-    public void WhenNotMax() {
+    public void whenNotMax() {
         SqMax check = new SqMax();
-        int result = check.max(8, 8, 8,8);
+        int result = check.max(8, 8, 8, 8);
         assertThat(result, is(8));
     }
 }

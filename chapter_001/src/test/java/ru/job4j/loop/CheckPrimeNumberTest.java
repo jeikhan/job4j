@@ -7,14 +7,14 @@ import static org.junit.Assert.assertThat;
 
 public class CheckPrimeNumberTest {
     @Test
-    public void When5() {
+    public void when5() {
         CheckPrimeNumber prime = new CheckPrimeNumber();
         boolean rsl = prime.check(5);
         assertThat(rsl, is(true));
     }
 
     @Test
-    public void When4() {
+    public void when4() {
         CheckPrimeNumber prime = new CheckPrimeNumber();
         boolean rsl = prime.check(4);
         assertThat(rsl, is(false));
