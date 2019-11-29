@@ -2,8 +2,21 @@ package ru.job4j.sort;
 
 import java.util.Arrays;
 
+/**
+ * Class Merge объединяет два массива.
+ *
+ * @author Evgeniy Kapaev
+ * @since 29.11.2019
+ */
 public class Merge {
-
+    /**
+     * Метод merge производит сравнение первых
+     * элементов двух массивов и записывает
+     * больший из них в третий
+     * @param left - первый массив
+     * @param right - второй массив
+     * @return rsl - возвращает третий массив
+     */
     public int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
         int indexLeft = 0;
