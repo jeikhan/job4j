@@ -1,6 +1,19 @@
 package ru.job4j.array;
 
+/**
+ * Класс Defragment перемещает заполненные ячейки
+ * одномерного массива вначало, а пустые в конец
+ * @author Evgeniy Kapaev
+ * @version 1.0
+ */
 public class Defragment {
+
+    /**
+     * метод compress сравнивает значение каждой ячейки
+     * с null и при совпадении перемещает их в конец
+     * @param array - входящий массив
+     * @return array - возвращает отсортированный массив
+     */
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             String cell = array[index];
