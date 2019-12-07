@@ -24,10 +24,11 @@ git clone https://github.com/jeikhan/job4j.git
 
 ### Список задач
 
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [x] Завершить 1 часть из 4
+- [ ] Завершить 2 часть из 4
+- [ ] Завершить 3 часть из 4
+- [ ] Завершить 4 часть из 4
 
 ### Контакты
 
-:envelope: evgenii.kapaev@yandex.ru
+e-mail: evgenii.kapaev@yandex.ru
