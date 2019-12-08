@@ -32,3 +32,5 @@ git clone https://github.com/jeikhan/job4j.git
 ### Контакты
 
 e-mail: evgenii.kapaev@yandex.ru
+
+skype:
