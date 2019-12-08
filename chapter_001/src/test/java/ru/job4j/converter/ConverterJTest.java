@@ -8,7 +8,7 @@ public class ConverterJTest {
     public void rubleToEuro() {
         int in = 140;
         int expected = 2;
-        int out = Converter.rubleToEuro(in);
+        int out = Converter.roubleToEuro(in);
         Assert.assertEquals(expected, out);
     }
 
@@ -16,7 +16,7 @@ public class ConverterJTest {
     public void rubleToDollar() {
         int in = 140;
         float expected = 2.3333333f;
-        float out = Converter.rubleToDollar(in);
+        float out = Converter.roubleToDollar(in);
         Assert.assertEquals(expected, out, 0);
     }
 
@@ -24,7 +24,7 @@ public class ConverterJTest {
     public void euroToRuble() {
         int in = 140;
         int expected = 9800;
-        int out = Converter.euroToRuble(in);
+        int out = Converter.euroToRouble(in);
         Assert.assertEquals(expected, out);
     }
 
@@ -32,7 +32,7 @@ public class ConverterJTest {
     public void dollarToRuble() {
         int in = 140;
         int expected = 8400;
-        int out = Converter.dollarToRuble(in);
+        int out = Converter.dollarToRouble(in);
         Assert.assertEquals(expected, out);
     }
 }

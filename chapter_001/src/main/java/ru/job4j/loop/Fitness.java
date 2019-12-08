@@ -1,11 +1,26 @@
 package ru.job4j.loop;
 
+/**
+ * Класс Fitness подсчитывает количество месяцев,
+ * через которое ivan обгонит nikolay в тяге весов
+ * @author Evgeniy Kapaev
+ * @version 1.1
+ */
 public class Fitness {
-    public int calc(int ivan, int nik) {
+
+    /**
+     * Метод calculate инкрементирует количество месяцев
+     * через цикл while до тех пор, пока ivan < nikolay
+     * @param ivan - значение тягового веса Ивана
+     * @param nikolay - значение тягового веса Николая
+     * @return month - количество месяцев, прошедщих до
+     * того как Иван обогнал Николая
+     */
+    public int calculate(int ivan, int nikolay) {
         int month = 0;
-        while (ivan < nik) {
+        while (ivan < nikolay) {
             ivan *= 3;
-            nik *= 2;
+            nikolay *= 2;
             month++;
         }
         return month;

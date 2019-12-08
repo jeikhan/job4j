@@ -17,14 +17,14 @@ public class Check {
      * Возвращает true если массив
      * однородный, либо false если нет
      *
-     * @param data - логический массив
+     * @param array - логический массив
      * @return result - возвращает true
      *                  или false
      */
-    public boolean mono(boolean[] data) {
+    public boolean mono(boolean[] array) {
         boolean result = true;
-        for (int i = 0; i < data.length; i++) {
-            if (data[i] != data[0]) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != array[0]) {
                 result = false;
                 break;
             }

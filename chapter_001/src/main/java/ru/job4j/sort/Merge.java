@@ -15,23 +15,23 @@ public class Merge {
      * больший из них в третий
      * @param left - первый массив
      * @param right - второй массив
-     * @return rsl - возвращает третий массив
+     * @return result - возвращает третий массив
      */
     public int[] merge(int[] left, int[] right) {
-        int[] rsl = new int[left.length + right.length];
+        int[] result = new int[left.length + right.length];
         int indexLeft = 0;
         int indexRight = 0;
-        int indexRls = 0;
-        while (indexRls < rsl.length) {
+        int indexResult = 0;
+        while (indexResult < result.length) {
             if (indexLeft < left.length && indexRight < right.length) {
-                rsl[indexRls++] = left[indexLeft] < right[indexRight] ? left[indexLeft++] : right[indexRight++];
+                result[indexResult++] = left[indexLeft] < right[indexRight] ? left[indexLeft++] : right[indexRight++];
             } else if (indexLeft < left.length) {
-                rsl[indexRls++] = left[indexLeft++];
+                result[indexResult++] = left[indexLeft++];
             } else {
-                rsl[indexRls++] = right[indexRight++];
+                result[indexResult++] = right[indexRight++];
             }
         }
-        return rsl;
+        return result;
     }
 
     public static void main(String[] args) {

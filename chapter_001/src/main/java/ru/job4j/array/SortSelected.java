@@ -13,24 +13,18 @@ public class SortSelected {
      * элемент массива и его индекс в массиве соотвественно.
      * Попарно сравнивает элементы массива через циклы for и
      * выстраивает их в порядке возрастания.
+     * findMin ищет минимальный элемент массива data.
+     * indexOf ищет индекс минимального элемента min массива data.
      *
      * @param data - исходный массив
      * @return data - возвращает отсортированный массив
      */
     public static int[] sort(int[] data) {
-
-        // findMin ищет минимальный элемент массива data...
-        int min = MinDiapason.findMin(data, 0, data.length);
-
-        // indexOf ищет индекс минимального элемента min массива data...
-        int index = FindLoopMod.indexOf(data, min, 0, data.length);
-
-        // т.к. min известен, ставим его на 0-ую позицию...
+        int minimum = MinDiapason.findMin(data, 0, data.length);
+        int index = FindLoopMod.indexOf(data, minimum, 0, data.length);
         int temp = data[0];
-        data[0] = min;
+        data[0] = minimum;
         data[index] = temp;
-
-        // сравниваем и упорядочиваем оставшиеся элементы массива...
         for (int i = 1; i < data.length; i++) {
             for (int j = i + 1; j < data.length; j++) {
                 if (data[i] > data[j]) {

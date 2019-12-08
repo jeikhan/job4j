@@ -19,13 +19,13 @@ public class MinDiapason {
      * @return min - возвращает минимальное значение
      */
     public static int findMin(int[] array, int start, int finish) {
-        int min = array[start];
+        int minimum = array[start];
         for (int i = start; start < finish; start++) {
-            if (array[start] < min) {
-                min = array[start];
+            if (array[start] < minimum) {
+                minimum = array[start];
 
             }
         }
-        return min;
+        return minimum;
     }
 }

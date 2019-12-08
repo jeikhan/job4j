@@ -15,19 +15,19 @@ public class FindLoopMod {
      * с start и заканчивая finish.
      *
      * @param data - массив чисел
-     * @param el - искомое число массива
+     * @param element - искомое число массива
      * @param start - индекс начала поиска
      * @param finish - индекс конца поиска
      * @return rst - возвращение индекса искомого числа
      */
-    public static int indexOf(int[] data, int el, int start, int finish) {
-        int rst = -1;
+    public static int indexOf(int[] data, int element, int start, int finish) {
+        int result = -1;
         for (int i = start; start < finish; start++) {
-            if (data[start] == el) {
-                rst = start;
+            if (data[start] == element) {
+                result = start;
                 break;
             }
         }
-        return rst;
+        return result;
     }
 }

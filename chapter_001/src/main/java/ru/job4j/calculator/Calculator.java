@@ -1,4 +1,5 @@
 package ru.job4j.calculator;
+
 /**
  * Class Calculator выполняет арифметические операции
  * над двумя числами.
@@ -7,34 +8,51 @@ package ru.job4j.calculator;
  * @version 1.0
  */
 public class Calculator {
-    public static void add(double first, double second) {
+
+    /**
+     * Метод add производит операцию сложения
+     * @param first - первое слагаемое
+     * @param second - второе слагаемое
+     */
+    public static void addition(double first, double second) {
         double result = first + second;
         System.out.println(first + " + " + second + " = " + result);
     }
 
-    public static void div(double first, double second) {
+    /**
+     * Метод div производит операцию деления
+     * @param first - делимое
+     * @param second - делитель
+     */
+    public static void division(double first, double second) {
         double result = first / second;
         System.out.println(first + " / " + second + " = " + result);
     }
 
-    public static void multiply(double first, double second) {
+    /**
+     * Метод multiply производит операцию умножения
+     * @param first - множимое
+     * @param second - множитель
+     */
+    public static void multiplication(double first, double second) {
         double result = first * second;
         System.out.println(first + " * " + second + " = " + result);
     }
 
-    public static void subtrack(double first, double second) {
+    /**
+     * Метод subtract производит операцию вычитания
+     * @param first - уменьшаемое
+     * @param second - вычитаемое
+     */
+    public static void subtract(double first, double second) {
         double result = first - second;
         System.out.println(first + " - " + second + " = " + result);
     }
 
-    /**
-     * Метод main содержит методы с заданными параметрами.
-     * @param args - args
-     */
     public static void main(String[] args) {
-        add(1, 1);
-        div(4, 2);
-        multiply(2, 1);
-        subtrack(10, 5);
+        addition(1, 1);
+        division(4, 2);
+        multiplication(2, 1);
+        subtract(10, 5);
     }
 }

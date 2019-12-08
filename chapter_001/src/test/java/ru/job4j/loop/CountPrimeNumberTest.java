@@ -5,25 +5,25 @@ import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
-public class PrimeNumberTest {
+public class CountPrimeNumberTest {
     @Test
     public void when5() {
-        PrimeNumber prime = new PrimeNumber();
-        int count = prime.calc(20);
+        CountPrimeNumber prime = new CountPrimeNumber();
+        int count = prime.calculate(20);
         assertThat(count, is(3));
     }
 
     @Test
     public void when11() {
-        PrimeNumber prime = new PrimeNumber();
-        int count = prime.calc(11);
+        CountPrimeNumber prime = new CountPrimeNumber();
+        int count = prime.calculate(11);
         assertThat(count, is(5));
     }
 
     @Test
     public void when1() {
-        PrimeNumber prime = new PrimeNumber();
-        int count = prime.calc(2);
+        CountPrimeNumber prime = new CountPrimeNumber();
+        int count = prime.calculate(2);
         assertThat(count, is(1));
     }
 }

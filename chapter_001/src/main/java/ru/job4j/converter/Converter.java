@@ -1,32 +1,56 @@
 package ru.job4j.converter;
 
+/**
+ * Класс Converter производит конвертацию валюты
+ * @author Evgeniy Kapaev
+ * @version 1.1
+ */
 public class Converter {
-    public static int rubleToEuro(int value) {
-        return value / 70;
+
+    /**
+     * Метод rubleToEuro конвертирует рубли в евро
+     * @param rouble - количество рублей
+     * @return - возвращает количество евро
+     */
+    public static int roubleToEuro(int rouble) {
+        return rouble / 70;
     }
 
-    public static float rubleToDollar(float value) {
-        return value / 60;
+    /**
+     * Метод roubleToDollar конвертирует рубли в доллары
+     * @param rouble - количество рублей
+     * @return - возвращает количество долларов
+     */
+    public static float roubleToDollar(float rouble) {
+        return rouble / 60;
     }
 
-    public static int euroToRuble(int value) {
-
-        return value * 70;
+    /**
+     * Метод euroToRuble конвертирует евро в рубли
+     * @param euro - количество евро
+     * @return - возвращает количество рублей
+     */
+    public static int euroToRouble(int euro) {
+        return euro * 70;
     }
 
-    public static int dollarToRuble(int value) {
-
-        return value * 60;
+    /**
+     * Метод dollarToRuble конвертирует доллары в рубли
+     * @param dollar - количество долларов
+     * @return - возвращает количество рублей
+     */
+    public static int dollarToRouble(int dollar) {
+        return dollar * 60;
     }
 
     public static void main(String[] args) {
-        int euro = rubleToEuro(140);
+        int euro = roubleToEuro(140);
         System.out.println("140 rubles are " + euro + " euro ");
-        float dollar = rubleToDollar(140);
+        float dollar = roubleToDollar(140);
         System.out.println("140 rubles are " + dollar + " dollar ");
-        int rubtoeur = euroToRuble(140);
-        System.out.println("140 euro are " + rubtoeur + " rubles ");
-        int rubtodol = dollarToRuble(140);
-        System.out.println("140 dollars are " + rubtodol + " rubles ");
+        int roubles = euroToRouble(140);
+        System.out.println("140 euro are " + roubles + " roubles ");
+        int rouble = dollarToRouble(140);
+        System.out.println("140 dollars are " + rouble + " roubles ");
     }
 }

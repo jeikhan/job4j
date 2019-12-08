@@ -17,17 +17,17 @@ public class FindLoop {
      * на позиции этого индекса с искомым числом el.
      *
      * @param data - массив чисел
-     * @param el - искомое число массива
+     * @param element - искомое число массива
      * @return rst - возвращение индекса искомого числа
      */
-    public int indexOf(int[] data, int el) {
-        int rst = -1;
+    public int indexOf(int[] data, int element) {
+        int result = -1;
         for (int index = 0; index < data.length; index++) {
-            if (data[index] == el) {
-                rst = index;
+            if (data[index] == element) {
+                result = index;
                 break;
             }
         }
-        return rst;
+        return result;
     }
 }

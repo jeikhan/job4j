@@ -17,13 +17,13 @@ public class ArrayChar {
      * возвращает true
      *
      * @param word - предполагаемый массив символов
-     * @param pref - входной массив символов
+     * @param inputWord - входной массив символов
      * @return result - возвращает true или false
      */
-    public static boolean startsW(char[] word, char[] pref) {
+    public static boolean startsW(char[] word, char[] inputWord) {
         boolean result = true;
-        for (int i = 0; i < pref.length; i++) {
-            if (pref[i] != word[i]) {
+        for (int i = 0; i < inputWord.length; i++) {
+            if (inputWord[i] != word[i]) {
                 result = false;
                 break;
             }
