@@ -4,7 +4,7 @@ package ru.job4j.oop;
  * класс переводит русское слово в
  * английский аналог
  * @author Evgeniy Kapaev
- * @version 1.0
+ * @version 1.1
  */
 public class DummyDic {
 
@@ -13,14 +13,13 @@ public class DummyDic {
      * слова
      * @return eng - содержит английский аналог
      */
-    public String engToRus() {
-        String eng = "unknown word";
+    public String engToRus(String eng) {
+        System.out.println("Неизвестное слово = " + eng);
         return eng;
     }
 
     public static void main(String[] args) {
         DummyDic translator = new DummyDic();
-        String translation = translator.engToRus();
-        System.out.println("Неизвестное слово = " + translation);
+        String translation = translator.engToRus("unknown word");
     }
 }
