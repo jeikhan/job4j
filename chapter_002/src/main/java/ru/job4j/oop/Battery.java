@@ -25,8 +25,8 @@ public class Battery {
      *                приписываем заряд
      */
     public void exchange(Battery another) {
-        this.load = this.load - (load / 2);
         another.load = another.load + this.load;
+        this.load = 0;
     }
 
     public static void main(String[] args) {
