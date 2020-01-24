@@ -7,7 +7,7 @@ import static java.lang.Math.sqrt;
  * перегрузка конструкторов: расчет расстояния между двумя точками
  * в двухмерном и трехмерном пространствах
  * @author Evgeniy Kapaev
- * @version 1.0
+ * @version 1.1
  */
 public class Point {
     private int x;
