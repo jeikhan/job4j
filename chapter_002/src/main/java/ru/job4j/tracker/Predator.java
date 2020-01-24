@@ -10,12 +10,12 @@ public class Predator extends Animal {
     /**
      * вызов конструктора родительского класса
      */
-    public Predator() {
-        super();
+    public Predator(String name) {
+        super(name);
         System.out.println("class Predator");
     }
 
     public static void main(String[] args) {
-        Predator predator = new Predator();
+        Predator predator = new Predator("Predator");
     }
 }
