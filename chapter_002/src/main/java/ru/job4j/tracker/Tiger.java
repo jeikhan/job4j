@@ -15,7 +15,11 @@ public class Tiger extends Animal {
         System.out.println("class Tiger");
     }
 
+    public Tiger() {
+    }
+
     public static void main(String[] args) {
-        Tiger tiger = new Tiger("Tiger");
+        Tiger tiger = new Tiger();
+        Tiger tiger1 = new Tiger("Tiger");
     }
 }

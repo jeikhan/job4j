@@ -4,7 +4,7 @@ package ru.job4j.tracker;
  * наследование. Конструктор по умолчанию. Родительский
  * класс
  * @author Evgeniy Kapaev
- * @version 1.0
+ * @version 1.1
  */
 public class Animal {
     public Animal() {
