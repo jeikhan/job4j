@@ -1,5 +1,10 @@
 package ru.job4j.encapsulation;
 
+/**
+ * Упражнение на проставление модификаторов доступа
+ * @author Evgeniy Kapaev
+ * @version 1.1
+ */
 public class Config {
     private String name;
     private int position;
@@ -13,7 +18,7 @@ public class Config {
         System.out.println(position);
     }
 
-    private String genProperty(String key) {
+    public String getProperty(String key) {
         return search(key);
     }
 
