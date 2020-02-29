@@ -3,12 +3,17 @@ package ru.job4j.pojo;
 import java.util.Date;
 
 /**
- * устанавливаем значения полям из класса Student и
- * выводим их на консоль
+ * Установка и считывание данных студента
  * @author Evgeniy Kapaev
- * @version 1.0
+ * @version 1.1
  */
 public class College {
+
+    /**
+     * Установка значений полей name, group, date и
+     * вывод их на консоль
+     * @param args - массив параметров
+     */
     public static void main(String[] args) {
         Student student = new Student();
         student.setName("Ivanov Ivan Ivanovich");
