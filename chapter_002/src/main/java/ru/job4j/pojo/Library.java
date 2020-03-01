@@ -1,12 +1,17 @@
 package ru.job4j.pojo;
 
 /**
- * создание массива книг, перестановка книг между собой,
- * вывод книги с определенным названием на консоль
+ * Библиотека.
  * @author Evgeniy Kapaev
  * @version 1.0
  */
 public class Library {
+
+    /**
+     * Создание массива книг, перестановка местами, вывод
+     * книги с определенным названием на консоль
+     * @param args
+     */
     public static void main(String[] args) {
         Book book = new Book("Five Weeks in a Balloon", 300);
         Book book1 = new Book("From the Earth to the Moon", 350);
