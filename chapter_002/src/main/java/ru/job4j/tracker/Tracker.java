@@ -1,5 +1,6 @@
 package ru.job4j.tracker;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -26,10 +27,11 @@ public class Tracker {
     }
 
     /**
-     * Вовзращает все заявки
+     * Вовзращает списка всех заявок
      */
     public Item[] findAll() {
-        return findAll();
+        Item[] result = Arrays.copyOf(items, this.position);
+        return result;
     }
 
     /**
@@ -38,7 +40,15 @@ public class Tracker {
      * @return заявки совпавшие при сравнении name и key
      */
     public Item[] findByName(String key) {
-        return findByName(key);
+        Item[] result = new Item[this.position];
+        int size = 0;
+        for (int index = 0; index < this.position; index++) {
+            if (items[index].getName().equals(key)) {
+                result[size] = this.items[index];
+                size++;
+            }
+        }
+        return Arrays.copyOf(result, size);
     }
 
     /**
@@ -47,9 +57,14 @@ public class Tracker {
      * @return заявки совпавшие при сравнении id с аргументом
      */
     public Item findById(String id) {
-        return findById(id);
+        Item result = null;
+        for (int index = 0; index < position; index++) {
+            if (items[index].getId().equals(id)) {
+                result = items[index];
+            }
+        }
+        return result;
     }
-
     /**
      * Генерирует уникальный ключ для заявки
      * на основании времени и произвольного числа

@@ -23,6 +23,7 @@ public class Item {
 
     /**
      * Получение значения уникального ключа заявки
+     * @return уникальный ключ заявки
      */
     public String getId() {
         return id;
