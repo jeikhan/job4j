@@ -61,10 +61,12 @@ public class Tracker {
         for (int index = 0; index < position; index++) {
             if (items[index].getId().equals(id)) {
                 result = items[index];
+                break;
             }
         }
         return result;
     }
+
     /**
      * Генерирует уникальный ключ для заявки
      * на основании времени и произвольного числа
