@@ -10,7 +10,7 @@ public class CountPrimeNumberTest {
     public void when5() {
         CountPrimeNumber prime = new CountPrimeNumber();
         int count = prime.calculate(20);
-        assertThat(count, is(3));
+        assertThat(count, is(8));
     }
 
     @Test
