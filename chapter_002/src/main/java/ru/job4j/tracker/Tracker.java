@@ -27,7 +27,45 @@ public class Tracker {
     }
 
     /**
-     * Вовзращает списка всех заявок
+     * Поиск и замена существующей заявки
+     * @param item - новая заявка
+     * @param id - уникальный ключ существующей заявки
+     * @return результат операции("успешно" или "не успешно")
+     */
+    public String replace(Item item, String id) {
+        String result = "Unsuccesful";
+        for (int index = 0; index < position; index++) {
+            if (items[index].getId().equals(id)) {
+                items[index] = item;
+                result = "Succesful";
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Поиск и удаление заявки
+     * @param id - уникальный ключ существующей заявки
+     * @return результат операции("успешно" или "не успешно")
+     */
+    public String delete(String id) {
+        String result = "Unsuccesful";
+        for (int i = 0; i < position; i++) {
+            if (items[i].getId().equals(id)) {
+                result = "Succesful";
+            }
+            for (int j = i; j < position - 1; j++) {
+                items[j] = items[j + 1];
+            }
+            position--;
+            break;
+        }
+        return result;
+    }
+
+    /**
+     * Вовзращает список всех заявок
+     * @return массив заявок
      */
     public Item[] findAll() {
         Item[] result = Arrays.copyOf(items, this.position);
