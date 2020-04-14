@@ -44,21 +44,21 @@ public class Tracker {
     }
 
     /**
-     * Поиск и удаление заявки
+     * Поиск и удаление заявки по id
      * @param id - уникальный ключ существующей заявки
      * @return результат операции("успешно" или "не успешно")
      */
-    public String delete(String id) {
-        String result = "Unsuccesful";
+    public Item[] delete(String id) {
+        Item[] result = new Item[position];
         for (int i = 0; i < position; i++) {
             if (items[i].getId().equals(id)) {
-                result = "Succesful";
+                for (int j = i; j < position - 1; j++) {
+                    items[j] = items[j + 1];
+                    result[j] = items[j];
+                }
+                position--;
+                break;
             }
-            for (int j = i; j < position - 1; j++) {
-                items[j] = items[j + 1];
-            }
-            position--;
-            break;
         }
         return result;
     }

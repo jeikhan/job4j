@@ -2,7 +2,19 @@ package ru.job4j.tracker;
 
 import java.util.Scanner;
 
+/**
+ * Консольное приложение для работы с классом Tracker
+ * @author Evgeniy Kapaev
+ * @version 1.0
+ * @since 14.04.2020
+ */
 public class StartUI {
+
+    /**
+     * Алгоритмы взаимодействия с пользователем
+     * @param scanner - вводимые данные
+     * @param tracker - Tracker
+     */
     public void init(Scanner scanner, Tracker tracker) {
         boolean run = true;
         while (run) {
@@ -17,7 +29,10 @@ public class StartUI {
                 tracker.add(item);
             } else if (select == 1) {
                 System.out.println("=== All items ===");
-                System.out.println("All items are: " + tracker.findAll());
+                Item[] allItems = tracker.findAll();
+                for (int index = 0; index < allItems.length; index++) {
+                    System.out.println(allItems[index]);
+                }
             } else if (select == 2) {
                 System.out.println("=== Edit item ===");
                 System.out.print("Enter name: ");
@@ -30,7 +45,10 @@ public class StartUI {
                 System.out.println("=== Delete item ===");
                 System.out.print("Enter id: ");
                 String id = scanner.nextLine();
-                System.out.println("Operation completed " + tracker.delete(id));
+                Item[] newList = tracker.delete(id);
+                for (int index = 0; index < newList.length; index++) {
+                    System.out.println(newList[index]);
+                }
             } else if (select == 4) {
                 System.out.println("=== Find item by id ===");
                 System.out.print("Enter id: ");
@@ -40,13 +58,20 @@ public class StartUI {
                 System.out.println("=== Find item by name ===");
                 System.out.print("Enter name: ");
                 String name = scanner.nextLine();
-                System.out.println("Item is " + tracker.findByName(name));
+                Item[] result = tracker.findByName(name);
+                System.out.println("Items: ");
+                for (int index = 0; index < result.length; index++) {
+                    System.out.println(result[index]);
+                }
             } else if (select == 6) {
                 break;
             }
         }
     }
 
+    /**
+     * Вывод меню взаимодействия в консоль
+     */
     private void showMenu() {
         System.out.println("0. Add new Item");
         System.out.println("1. Show all items");
@@ -57,6 +82,10 @@ public class StartUI {
         System.out.println("6. Exit Program");
     }
 
+    /**
+     * Main
+     * @param args - параметры
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Tracker tracker = new Tracker();
