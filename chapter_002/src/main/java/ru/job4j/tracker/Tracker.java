@@ -22,8 +22,17 @@ public class Tracker {
      */
     public Item add(Item item) {
         item.setId(generateId());
-        items[position++] = item;
+        items[this.position++] = item;
         return item;
+    }
+
+    /**
+     * Возвращает уникальный ключ для заявки
+     * @return уникальный ключ
+     */
+    private String generateId() {
+        Random rm = new Random();
+        return String.valueOf(Math.abs(rm.nextLong() + System.currentTimeMillis()));
     }
 
     /**
@@ -32,12 +41,12 @@ public class Tracker {
      * @param id - уникальный ключ существующей заявки
      * @return результат операции("успешно" или "не успешно")
      */
-    public String replace(Item item, String id) {
-        String result = "Unsuccesful";
+    public Item replace(String item, String id) {
+        Item result = null;
         for (int index = 0; index < position; index++) {
             if (items[index].getId().equals(id)) {
-                items[index] = item;
-                result = "Succesful";
+                items[index].setName(item);
+                result = items[index];
             }
         }
         return result;
@@ -60,7 +69,7 @@ public class Tracker {
                 break;
             }
         }
-        return result;
+        return Arrays.copyOf(items, position);
     }
 
     /**
@@ -68,7 +77,10 @@ public class Tracker {
      * @return массив заявок
      */
     public Item[] findAll() {
-        Item[] result = Arrays.copyOf(items, this.position);
+        Item[] result = Arrays.copyOf(items, position);
+        if (result.length == 0) {
+            System.out.println("Items not found...");
+        }
         return result;
     }
 
@@ -82,9 +94,12 @@ public class Tracker {
         int size = 0;
         for (int index = 0; index < this.position; index++) {
             if (items[index].getName().equals(key)) {
-                result[size] = this.items[index];
+                result[size] = items[index];
                 size++;
             }
+        }
+        if (size == 0) {
+            System.out.println("Items not found...");
         }
         return Arrays.copyOf(result, size);
     }
@@ -96,22 +111,19 @@ public class Tracker {
      */
     public Item findById(String id) {
         Item result = null;
-        for (int index = 0; index < position; index++) {
+        for (int index = 0; index < this.position; index++) {
             if (items[index].getId().equals(id)) {
                 result = items[index];
-                break;
             }
         }
         return result;
     }
 
-    /**
-     * Генерирует уникальный ключ для заявки
-     * на основании времени и произвольного числа
-     * @return уникальный ключ
-     */
-    private String generateId() {
-        Random rm = new Random();
-        return String.valueOf(rm.nextLong() + System.currentTimeMillis());
+    public static void main(String[] args) {
+        Tracker tracker = new Tracker();
+        Item item = new Item("hello");
+        tracker.add(item);
+        System.out.println("id is " + item.getId());
+        System.out.println("name is " + item.getName());
     }
 }

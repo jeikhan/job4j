@@ -7,10 +7,10 @@ package ru.job4j.tracker;
  */
 public class Item {
 
-    /** Уникальный ключ заявки */
+    /** Уникальный ключ заявки. */
     private String id;
 
-    /** Имя заявки */
+    /** Имя заявки. */
     private String name;
 
     /**
@@ -22,7 +22,8 @@ public class Item {
     }
 
     /**
-     * Получение значения уникального ключа заявки
+     * Получение значения уникального
+     * ключа заявки.
      * @return уникальный ключ заявки
      */
     public String getId() {
@@ -30,7 +31,7 @@ public class Item {
     }
 
     /**
-     * Установка значения уникального ключа заявки
+     * Установка значения уникального ключа заявки.
      * @param id - уникальный ключ
      */
     public void setId(String id) {
@@ -38,17 +39,18 @@ public class Item {
     }
 
     /**
-     * Получение значения имени заявки
+     * Получение значения имени заявки.
+     * @return имя заявки
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Установка значения имени заявки
-     * @param name - имя заявки
+     * Установка значения имени заявки.
+     * @param names - имя заявки
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String names) {
+        this.name = names;
     }
 }
