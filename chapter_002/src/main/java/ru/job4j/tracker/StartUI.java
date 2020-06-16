@@ -37,7 +37,6 @@ public class StartUI {
                 break;
             } else {
                 System.out.println("Menu item not found... please try again\n");
-
             }
         }
     }
@@ -46,15 +45,20 @@ public class StartUI {
      * Вывод меню взаимодействия в консоль
      */
     private void showMenu() {
-        System.out.println("0. Add new Item");
+        System.out.println("0. Add new item");
         System.out.println("1. Show all items");
         System.out.println("2. Edit item");
         System.out.println("3. Delete item");
         System.out.println("4. Find item by Id");
         System.out.println("5. Find items by name");
-        System.out.println("6. Exit Program");
+        System.out.println("6. Exit");
     }
 
+    /**
+     * Создание новой заявки
+     * @param input входные данные
+     * @param tracker
+     */
     public static void createItem(Input input, Tracker tracker) {
         System.out.println("=== Create new Item ===");
         String name = input.askStr("Enter name: ");
@@ -81,15 +85,17 @@ public class StartUI {
         System.out.println("=== Edit item ===");
         String id = input.askStr("Enter id current item: ");
         String name = input.askStr("Enter new item name: ");
-        Item result = tracker.replace(name, id);
         System.out.println("---");
-        for (int index = 0; index < tracker.findAll().length; index++) {
-            System.out.println(
-                    (index + 1) + ". Name: " + tracker.findAll()[index].getName() + " (" + tracker.findAll()[index].getId() + ")"
-            );
-        }
+        System.out.println(
+                "Old item: " + tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
+        );
+        Item result = tracker.replace(name, id);
+        System.out.println(
+                "Updated item: " + tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
+        );
         System.out.println("=================\n");
     }
+
 
     public static void deleteItem(Input input, Tracker tracker) {
         System.out.println("=== Delete item ===");
@@ -98,7 +104,7 @@ public class StartUI {
         System.out.println("---");
         for (int index = 0; index < newList.length; index++) {
             System.out.println(
-                    (index + 1) + ". Name: " + newList[index].getName() + " (" + newList[index].getId() + ")"
+                    (index + 1) + ". " + newList[index].getName() + " (" + newList[index].getId() + ")"
             );
         }
         System.out.println("===================\n");
@@ -109,7 +115,7 @@ public class StartUI {
         String id = input.askStr("Enter id: ");
         System.out.println("---");
         System.out.println(
-                "Name: " + tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
+                "Found item:\n" + tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
         );
         System.out.println("=========================\n");
     }
@@ -121,7 +127,7 @@ public class StartUI {
         Item[] result = tracker.findByName(name);
         for (int index = 0; index < result.length; index++) {
             System.out.println(
-                    (index + 1) + ". Name: " + result[index].getName() + " (" + result[index].getId() + ")"
+                    "Found item(s):\n" + (index + 1) + ". " + result[index].getName() + " (" + result[index].getId() + ")"
             );
         }
         System.out.println("=========================\n");
