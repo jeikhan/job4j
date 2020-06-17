@@ -20,6 +20,7 @@ public class StartUI {
             System.out.println("======================");
             int select = input.askInt("Select menu item: ");
             UserAction action = actions[select];
+            System.out.println("");
             run = action.execute(input, tracker);
         }
     }
@@ -121,7 +122,13 @@ public class StartUI {
         Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
         UserAction[] action = {
-                new CreateAction()
+                new CreateAction(),
+                new ReplaceAction(),
+                new DeleteAction(),
+                new ShowAllAction(),
+                new FindIdAction(),
+                new FindNameAction(),
+                new ExitAction()
         };
         new StartUI().init(input, tracker, action);
     }
