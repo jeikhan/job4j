@@ -1,4 +1,4 @@
-package ru.job4j.prof;
+package ru.job4j.inheritance.prof;
 
 /**
  * Дочерний класс - врач-хирург
