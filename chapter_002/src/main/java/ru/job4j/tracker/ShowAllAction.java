@@ -7,6 +7,12 @@ package ru.job4j.tracker;
  */
 public class ShowAllAction implements UserAction {
 
+    private final Output out;
+
+    public ShowAllAction(Output out) {
+        this.out = out;
+    }
+
     /**
      * Вывод пункта меню в консоль.
      * @return название пункта.
@@ -24,14 +30,14 @@ public class ShowAllAction implements UserAction {
      */
     @Override
     public boolean execute(Input input, Tracker tracker) {
-        System.out.println("=== All items ===");
+        out.println("=== All items ===");
         Item[] allItems = tracker.findAll();
         for (int index = 0; index < allItems.length; index++) {
-            System.out.println(
+            out.println(
                     (index + 1) + ". " + allItems[index].getName() + " (" + allItems[index].getId() + ")"
             );
         }
-        System.out.println("=================\n");
+        out.println("=================\n");
         return true;
     }
 }

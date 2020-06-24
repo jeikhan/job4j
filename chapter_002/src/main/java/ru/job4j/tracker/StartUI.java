@@ -7,6 +7,12 @@ package ru.job4j.tracker;
  */
 public class StartUI {
 
+    private final Output out;
+
+    public StartUI(Output out) {
+        this.out = out;
+    }
+
     /**
      * Алгоритмы взаимодействия с пользователем
      * @param input - вводимые данные
@@ -28,9 +34,9 @@ public class StartUI {
      * Вывод меню взаимодействия в консоль
      */
     private void showMenu(UserAction[] actions) {
-        System.out.println("======== Menu ========");
+        out.println("======== Menu ========");
         for (int index = 0; index < actions.length; index++) {
-            System.out.println(index + ". " + actions[index].name());
+            out.println(index + ". " + actions[index].name());
         }
     }
 
@@ -39,17 +45,18 @@ public class StartUI {
      * @param args - параметры
      */
     public static void main(String[] args) {
+        Output output = new ConsoleOutput();
         Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
         UserAction[] action = {
-                new CreateAction(),
-                new ReplaceAction(),
-                new DeleteAction(),
-                new ShowAllAction(),
-                new FindIdAction(),
-                new FindNameAction(),
+                new CreateAction(output),
+                new ReplaceAction(output),
+                new DeleteAction(output),
+                new ShowAllAction(output),
+                new FindIdAction(output),
+                new FindNameAction(output),
                 new ExitAction()
         };
-        new StartUI().init(input, tracker, action);
+        new StartUI(output).init(input, tracker, action);
     }
 }

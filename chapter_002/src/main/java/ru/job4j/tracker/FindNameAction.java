@@ -7,6 +7,12 @@ package ru.job4j.tracker;
  */
 public class FindNameAction implements UserAction {
 
+    private final Output out;
+
+    public FindNameAction(Output out) {
+        this.out = out;
+    }
+
     /**
      * Вывод пункта меню в консоль.
      * @return название пункта.
@@ -24,16 +30,16 @@ public class FindNameAction implements UserAction {
      */
     @Override
     public boolean execute(Input input, Tracker tracker) {
-        System.out.println("=== Find item by name ===");
+        out.println("=== Find item by name ===");
         String name = input.askStr("Enter name: ");
-        System.out.println("---\nFound item(s):");
+        out.println("---\nFound item(s):");
         Item[] result = tracker.findByName(name);
         for (int index = 0; index < result.length; index++) {
-            System.out.println(
+            out.println(
                     (index + 1) + ". " + result[index].getName() + " (" + result[index].getId() + ")"
             );
         }
-        System.out.println("=========================\n");
+        out.println("=========================\n");
         return true;
     }
 }

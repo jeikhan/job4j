@@ -7,6 +7,12 @@ package ru.job4j.tracker;
  */
 public class FindIdAction implements UserAction {
 
+    private final Output out;
+
+    public FindIdAction(Output out) {
+        this.out = out;
+    }
+
     /**
      * Вывод пункта меню в консоль.
      * @return название пункта.
@@ -24,13 +30,13 @@ public class FindIdAction implements UserAction {
      */
     @Override
     public boolean execute(Input input, Tracker tracker) {
-        System.out.println("=== Find item by id ===");
+        out.println("=== Find item by id ===");
         String id = input.askStr("Enter id: ");
-        System.out.println("---\nFound item:");
-        System.out.println(
+        out.println("---\nFound item:");
+        out.println(
                 tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
         );
-        System.out.println("=========================\n");
+        out.println("=========================\n");
         return true;
     }
 }

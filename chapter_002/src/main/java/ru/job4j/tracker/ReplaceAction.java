@@ -7,6 +7,12 @@ package ru.job4j.tracker;
  */
 public class ReplaceAction implements UserAction {
 
+    private final Output out;
+
+    public ReplaceAction(Output out) {
+        this.out = out;
+    }
+
     /**
      * Вывод пункта меню в консоль.
      * @return название пункта.
@@ -24,18 +30,18 @@ public class ReplaceAction implements UserAction {
      */
     @Override
     public boolean execute(Input input, Tracker tracker) {
-        System.out.println("=== Edit item ===");
+        out.println("=== Edit item ===");
         String id = input.askStr("Enter id current item: ");
         String name = input.askStr("Enter new item name: ");
-        System.out.println("---");
-        System.out.println(
+        out.println("---");
+        out.println(
                 "Old item: " + tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
         );
         tracker.replace(name, id);
-        System.out.println(
+        out.println(
                 "Updated item: " + tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
         );
-        System.out.println("=================\n");
+        out.println("=================\n");
         return true;
     }
 }
