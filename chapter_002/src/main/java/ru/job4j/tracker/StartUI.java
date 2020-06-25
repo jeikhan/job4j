@@ -22,10 +22,8 @@ public class StartUI {
         boolean run = true;
         while (run) {
             this.showMenu(actions);
-            System.out.println("======================");
-            int select = input.askInt("Select menu item: ");
+            int select = input.askInt("Select menu: ");
             UserAction action = actions[select];
-            System.out.println("");
             run = action.execute(input, tracker);
         }
     }

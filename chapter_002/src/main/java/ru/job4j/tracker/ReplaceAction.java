@@ -6,7 +6,6 @@ package ru.job4j.tracker;
  * @version 1.0
  */
 public class ReplaceAction implements UserAction {
-
     private final Output out;
 
     public ReplaceAction(Output out) {
@@ -33,15 +32,11 @@ public class ReplaceAction implements UserAction {
         out.println("=== Edit item ===");
         String id = input.askStr("Enter id current item: ");
         String name = input.askStr("Enter new item name: ");
-        out.println("---");
-        out.println(
-                "Old item: " + tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
-        );
-        tracker.replace(name, id);
-        out.println(
-                "Updated item: " + tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
-        );
-        out.println("=================\n");
+        if (tracker.replace(name, id)) {
+            out.println("Item updated...");
+        } else {
+            out.println("Item not found...");
+        }
         return true;
     }
 }

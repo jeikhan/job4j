@@ -41,12 +41,13 @@ public class Tracker {
      * @param id - уникальный ключ существующей заявки
      * @return результат операции("успешно" или "не успешно")
      */
-    public Item replace(String item, String id) {
-        Item result = null;
+    public boolean replace(String item, String id) {
+        boolean result = false;
         for (int index = 0; index < position; index++) {
             if (items[index].getId().equals(id)) {
                 items[index].setName(item);
-                result = items[index];
+                result = true;
+                break;
             }
         }
         return result;
@@ -57,19 +58,19 @@ public class Tracker {
      * @param id - уникальный ключ существующей заявки
      * @return результат операции("успешно" или "не успешно")
      */
-    public Item[] delete(String id) {
-        Item[] result = new Item[position];
-        for (int i = 0; i < position; i++) {
+    public boolean delete(String id) {
+        boolean result = false;
+        for (int i = 0; i < this.position; i++) {
             if (items[i].getId().equals(id)) {
-                for (int j = i; j < position - 1; j++) {
+                for (int j = i; j < this.position - 1; j++) {
                     items[j] = items[j + 1];
-                    result[j] = items[j];
                 }
-                position--;
+                this.position--;
+                result = true;
                 break;
             }
         }
-        return Arrays.copyOf(items, position);
+        return result;
     }
 
     /**

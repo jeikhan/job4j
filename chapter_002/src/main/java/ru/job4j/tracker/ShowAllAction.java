@@ -6,7 +6,6 @@ package ru.job4j.tracker;
  * @version 1.0
  */
 public class ShowAllAction implements UserAction {
-
     private final Output out;
 
     public ShowAllAction(Output out) {
@@ -37,7 +36,6 @@ public class ShowAllAction implements UserAction {
                     (index + 1) + ". " + allItems[index].getName() + " (" + allItems[index].getId() + ")"
             );
         }
-        out.println("=================\n");
         return true;
     }
 }

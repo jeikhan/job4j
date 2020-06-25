@@ -6,7 +6,6 @@ package ru.job4j.tracker;
  * @version 1.0
  */
 public class CreateAction implements UserAction {
-
     private final Output out;
 
     public CreateAction(Output out) {
@@ -33,12 +32,9 @@ public class CreateAction implements UserAction {
     public boolean execute(Input input, Tracker tracker) {
         out.println("=== Create new Item ===");
         String name = input.askStr("Enter name: ");
-        out.println("---");
         Item item = new Item(name);
         tracker.add(item);
-        out.println("Name: " + item.getName());
-        out.println("Id: " + item.getId());
-        out.println("=======================\n");
+        out.println("Name: " + item.getName() + " (" + item.getId() + ")");
         return true;
     }
 }
