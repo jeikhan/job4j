@@ -31,10 +31,12 @@ public class FindIdAction implements UserAction {
     public boolean execute(Input input, Tracker tracker) {
         out.println("=== Find item by id ===");
         String id = input.askStr("Enter id: ");
-        out.println("Found item:");
-        out.println(
-                tracker.findById(id).getName() + " (" + tracker.findById(id).getId() + ")"
-        );
+        Item item = tracker.findById(id);
+        if (item != null) {
+            out.println("Found item: " + item.getName());
+        } else {
+            out.println("Item not found...");
+        }
         return true;
     }
 }
