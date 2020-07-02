@@ -35,7 +35,7 @@ public class StubInput implements Input {
      */
     @Override
     public String askStr(String question) {
-        return answers[position++];
+        return answers[this.position++];
     }
 
     /**

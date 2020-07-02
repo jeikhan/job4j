@@ -32,7 +32,7 @@ public class StartUI {
      * Вывод меню взаимодействия в консоль
      */
     private void showMenu(UserAction[] actions) {
-        out.println("======== Menu ========");
+        out.println("Menu:");
         for (int index = 0; index < actions.length; index++) {
             out.println(index + ". " + actions[index].name());
         }
