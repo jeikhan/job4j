@@ -4,7 +4,7 @@ package ru.job4j.tracker;
  * Обеспечение бесперебойной работы приложения
  * на ввод несуществующего пункта меню и ввод
  * строки вместо числа.
- * @version 1.0
+ * @version 1.1
  */
 public class ValidateInput implements Input {
     private final Output out;
@@ -29,7 +29,7 @@ public class ValidateInput implements Input {
                 value = in.askInt(question);
                 invalid = false;
             } catch (NumberFormatException nfe) {
-                System.out.println("Please enter validate data again.");
+                out.println("Please enter validate data again.");
             }
         } while (invalid);
         return value;
