@@ -7,28 +7,32 @@ import static org.junit.Assert.*;
  * Используем композицию.
  */
 public class TrackerSingleTest {
-    private TrackerSingleEnum trackerSingleEnum = TrackerSingleEnum.INSTANCE;
-    private TrackerSingleLazy trackerSingleLazy = TrackerSingleLazy.getInstance();
-    private TrackerSingleEager trackerSingleEager = TrackerSingleEager.getInstance();
-    private TrackerSinglePrivate trackerSinglePrivate = TrackerSinglePrivate.getInstance();
 
     @Test
     public void whenTrackerSingleEnum() {
-        assertEquals(trackerSingleEnum, trackerSingleEnum);
+        TrackerSingleEnum trackerSingleEnum1 = TrackerSingleEnum.INSTANCE;
+        TrackerSingleEnum trackerSingleEnum2 = TrackerSingleEnum.INSTANCE;
+        assertEquals(trackerSingleEnum1, trackerSingleEnum2);
     }
 
     @Test
     public void whenTrackerSingleLazy() {
-        assertEquals(trackerSingleLazy, trackerSingleLazy);
+        TrackerSingleLazy trackerSingleLazy1 = TrackerSingleLazy.getInstance();
+        TrackerSingleLazy trackerSingleLazy2 = TrackerSingleLazy.getInstance();
+        assertEquals(trackerSingleLazy1, trackerSingleLazy2);
     }
 
     @Test
     public void whenTrackerSingleEager() {
-        assertEquals(trackerSingleEager, trackerSingleEager);
+        TrackerSingleEager trackerSingleEager1 = TrackerSingleEager.getInstance();
+        TrackerSingleEager trackerSingleEager2 = TrackerSingleEager.getInstance();
+        assertEquals(trackerSingleEager1, trackerSingleEager2);
     }
 
     @Test
     public void whenTrackerSinglePrivate() {
-        assertEquals(trackerSinglePrivate, trackerSinglePrivate);
+        TrackerSinglePrivate trackerSinglePrivate1 = TrackerSinglePrivate.getInstance();
+        TrackerSinglePrivate trackerSinglePrivate2 = TrackerSinglePrivate.getInstance();
+        assertEquals(trackerSinglePrivate1, trackerSinglePrivate2);
     }
 }
