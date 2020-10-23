@@ -120,11 +120,4 @@ public class Tracker {
         return result;
     }
 
-    public static void main(String[] args) {
-        Tracker tracker = new Tracker();
-        Item item = new Item("hello");
-        tracker.add(item);
-        System.out.println("id is " + item.getId());
-        System.out.println("name is " + item.getName());
-    }
 }
