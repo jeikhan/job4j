@@ -1,5 +1,7 @@
 package ru.job4j.tracker;
 
+import java.util.List;
+
 /**
  * Вывод списка всех заявок.
  * @author Evgeniy Kapaev
@@ -30,10 +32,10 @@ public class ShowAllAction implements UserAction {
     @Override
     public boolean execute(Input input, Tracker tracker) {
         out.println("=== All items ===");
-        Item[] allItems = tracker.findAll();
-        for (int index = 0; index < allItems.length; index++) {
+        List<Item> allItems = tracker.findAll();
+        for (int index = 0; index < allItems.size(); index++) {
             out.println(
-                    (index + 1) + ". " + allItems[index].getName() + " (" + allItems[index].getId() + ")"
+                    (index + 1) + ". " + allItems.get(index).getName() + " (" + allItems.get(index).getId() + ")"
             );
         }
         return true;
