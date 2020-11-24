@@ -2,19 +2,25 @@ package ru.job4j.tracker;
 
 /**
  * Класс Item - модель заявки.
+ *
  * @author Evgeniy Kapaev
  * @version 1.0
  */
 public class Item {
 
-    /** Уникальный ключ заявки. */
+    /**
+     * Уникальный ключ заявки.
+     */
     private String id;
 
-    /** Имя заявки. */
+    /**
+     * Имя заявки.
+     */
     private String name;
 
     /**
      * Конструктор.
+     *
      * @param name - имя заявки
      */
     public Item(String name) {
@@ -24,6 +30,7 @@ public class Item {
     /**
      * Получение значения уникального
      * ключа заявки.
+     *
      * @return уникальный ключ заявки
      */
     public String getId() {
@@ -32,6 +39,7 @@ public class Item {
 
     /**
      * Установка значения уникального ключа заявки.
+     *
      * @param id - уникальный ключ
      */
     public void setId(String id) {
@@ -40,6 +48,7 @@ public class Item {
 
     /**
      * Получение значения имени заявки.
+     *
      * @return имя заявки
      */
     public String getName() {
@@ -48,6 +57,7 @@ public class Item {
 
     /**
      * Установка значения имени заявки.
+     *
      * @param names - имя заявки
      */
     public void setName(String names) {
