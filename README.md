@@ -1,4 +1,4 @@
-# JeiTracker &middot; ![GitHub](https://img.shields.io/github/license/jeikhan/job4j) [![job4j.ru](https://img.shields.io/badge/course-www.job4j.ru-brightgreen)](https://job4j.ru/index.html)
+# JeiTracker &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE) [![job4j.ru](https://img.shields.io/badge/course-www.job4j.ru-brightgreen)](https://job4j.ru/index.html)
 
 JeiTracker - a console application built in the Java language that is intended to:
 - **Add request:**  The user enters the name of the request, and the program assigns it a unique ID.
