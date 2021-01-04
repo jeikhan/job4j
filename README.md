@@ -45,3 +45,4 @@ E-mail: jeikhan@yandex.ru
 
 ### License
 
+JeiTracker is [MIT licensed](./LICENSE).
