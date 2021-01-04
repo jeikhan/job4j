@@ -19,12 +19,7 @@ public class ItemDescendingSortTest {
                 new Item("May")
         );
         Collections.sort(list, new ItemDescendingSort());
-        List<Item> expect = Arrays.asList(
-                new Item("Stig"),
-                new Item("May"),
-                new Item("Hammond"),
-                new Item("Clarkson")
-        );
+        List<String> expect = Arrays.asList("Stig", "May", "Hammond", "Clarkson");
         assertThat(list, is(expect));
     }
 }
