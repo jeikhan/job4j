@@ -1,4 +1,4 @@
-package ru.job4j.tracker.item;
+package ru.job4j.singleton.item;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
