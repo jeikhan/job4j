@@ -1,8 +1,6 @@
 # JeiTracker &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE) [![Java](https://img.shields.io/badge/Java-v13-blue)](https://www.oracle.com/java/technologies/javase-downloads.html) [![Maven](https://img.shields.io/badge/Maven-v3.6.2-blue)](https://maven.apache.org/download.cgi) ![status](https://img.shields.io/badge/status-development-red) ![GitHub last commit](https://img.shields.io/github/last-commit/jeikhan/job4j)
 
-JeiTracker is a console application, built in the Java language, that can store data with key "name - ID" in its database. 
-
----
+JeiTracker is a console application, built in the Java language, that can store data with key "name - ID" in its database.
 
 The app contains the following features:
 
