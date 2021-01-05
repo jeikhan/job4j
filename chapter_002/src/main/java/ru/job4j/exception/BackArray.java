@@ -1,4 +1,4 @@
-package ru.job4j.ex;
+package ru.job4j.exception;
 
 import java.util.Arrays;
 
