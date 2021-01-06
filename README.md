@@ -55,6 +55,6 @@ git clone https://github.com/jeikhan/job4j.git
 
 e-mail: jeikhan@yandex.ru
 
-### License
+## License
 
 The JeiTracker is open-sourced software licensed under the [MIT licensed](./LICENSE).
