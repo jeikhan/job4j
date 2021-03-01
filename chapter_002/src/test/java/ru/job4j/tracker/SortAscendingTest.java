@@ -28,6 +28,6 @@ public class SortAscendingTest {
                 new Item("May"),
                 new Item("Stig")
                 );
-        assertThat(list.hashCode(), is(expect.hashCode()));
+        assertThat(list, is(expect));
     }
 }
