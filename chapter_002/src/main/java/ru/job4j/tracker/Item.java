@@ -1,66 +1,52 @@
 package ru.job4j.tracker;
 
+import java.util.Objects;
+
 /**
- * Класс Item - модель заявки.
+ * Класс Item - модель данных.
  *
  * @author Evgeniy Kapaev
  * @version 1.0
  */
-public class Item {
-
-    /**
-     * Уникальный ключ заявки.
-     */
+public class Item implements Comparable<Item> {
     private String id;
-
-    /**
-     * Имя заявки.
-     */
     private String name;
 
-    /**
-     * Конструктор.
-     *
-     * @param name - имя заявки
-     */
     public Item(String name) {
         this.name = name;
     }
 
-    /**
-     * Получение значения уникального
-     * ключа заявки.
-     *
-     * @return уникальный ключ заявки
-     */
     public String getId() {
         return id;
     }
 
-    /**
-     * Установка значения уникального ключа заявки.
-     *
-     * @param id - уникальный ключ
-     */
     public void setId(String id) {
         this.id = id;
     }
 
-    /**
-     * Получение значения имени заявки.
-     *
-     * @return имя заявки
-     */
     public String getName() {
         return name;
     }
 
-    /**
-     * Установка значения имени заявки.
-     *
-     * @param names - имя заявки
-     */
     public void setName(String names) {
         this.name = names;
+    }
+
+    @Override
+    public int compareTo(Item obj) {
+        return this.name.compareTo(obj.getName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(name);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Item item = (Item) obj;
+        return Objects.equals(name, item.name);
     }
 }
