@@ -27,7 +27,7 @@ public class SortAscendingTest {
                 new Item("Hammond"),
                 new Item("May"),
                 new Item("Stig")
-                );
+        );
         assertThat(list, is(expect));
     }
 }

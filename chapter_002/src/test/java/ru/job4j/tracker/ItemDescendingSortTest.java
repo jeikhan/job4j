@@ -2,6 +2,7 @@ package ru.job4j.tracker;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,18 +12,21 @@ import static org.junit.Assert.assertThat;
 public class ItemDescendingSortTest {
     @Test
     public void sortDesc() {
-        List<Item> list = Arrays.asList(
-                new Item("Hammond"),
-                new Item("Clarkson"),
-                new Item("Stig"),
-                new Item("May")
-        );
+        List<Item> list = new ArrayList<>();
+
+        list.add(new Item("May"));
+        list.add(new Item("Clarkson"));
+        list.add(new Item("Hammond"));
+        list.add(new Item("Stig"));
+
         list.sort(new ItemDescendingSort());
-        List<String> expect = Arrays.asList(
-                "Stig",
-                "May",
-                "Hammond",
-                "Clarkson");
-        assertThat(list.hashCode(), is(expect.hashCode()));
+
+        List<Item> expect = Arrays.asList(
+                new Item("Stig"),
+                new Item("May"),
+                new Item("Hammond"),
+                new Item("Clarkson")
+        );
+        assertThat(list, is(expect));
     }
 }

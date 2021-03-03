@@ -44,8 +44,12 @@ public class Item implements Comparable<Item> {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
         Item item = (Item) obj;
         return Objects.equals(name, item.name);
     }
