@@ -88,7 +88,7 @@ public class JobTest {
     public void combSort() {
         List<Job> jobs = new ArrayList<>();
 
-        jobs.add(new Job("write", 5));
+        jobs.add(new Job("read", 5));
         jobs.add(new Job("read", 3));
         jobs.add(new Job("read", 4));
 
@@ -98,7 +98,7 @@ public class JobTest {
         List<Job> expect = Arrays.asList(
                 new Job("read", 3),
                 new Job("read", 4),
-                new Job("write", 5)
+                new Job("read", 5)
         );
 
         assertThat(jobs, is(expect));
