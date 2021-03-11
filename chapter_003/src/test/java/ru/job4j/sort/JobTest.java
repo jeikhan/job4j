@@ -1,4 +1,4 @@
-package ru.job4j.collect;
+package ru.job4j.sort;
 
 import org.junit.Test;
 
