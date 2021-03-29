@@ -56,8 +56,9 @@ public class BankService {
     public User findByPassport(String passport) {
         User result = null;
         for (User currentUser : users.keySet()) {
-            if (currentUser != null && currentUser.getPassport().equals(passport)) {
+            if (currentUser.getPassport().equals(passport)) {
                 result = currentUser;
+                break;
             }
         }
         return result;
@@ -77,6 +78,7 @@ public class BankService {
             for (Account account : accounts) {
                 if (account.getRequisite().equals(requisite)) {
                     result = account;
+                    break;
                 }
             }
         }
