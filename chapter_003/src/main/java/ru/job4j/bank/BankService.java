@@ -26,11 +26,7 @@ public class BankService {
      *             и имя пользователя.
      */
     public void addUser(User user) {
-        if (!users.containsKey(user)) {
-            users.put(user, new ArrayList<>());
-        } else {
-            System.out.println("This user already exists!");
-        }
+        users.putIfAbsent(user, new ArrayList<>());
     }
 
     /**
@@ -41,11 +37,14 @@ public class BankService {
      * @param account номер счёта пользователя.
      */
     public void addAccount(String passport, Account account) {
-        List<Account> currentAccount = users.get(findByPassport(passport));
-        if (!currentAccount.contains(account)) {
-            currentAccount.add(account);
-        } else {
-            System.out.println("This account already exists!");
+        User user = findByPassport(passport);
+        if (user != null) {
+            List<Account> currentAccount = users.get(user);
+            if (!currentAccount.contains(account)) {
+                currentAccount.add(account);
+            } else {
+                System.out.println("This account already exists!");
+            }
         }
     }
 
@@ -73,8 +72,8 @@ public class BankService {
     public Account findByRequisite(String passport, String requisite) {
         Account result = null;
         User user = findByPassport(passport);
-        List<Account> accounts = users.get(user);
         if (user != null) {
+            List<Account> accounts = users.get(user);
             for (Account account : accounts) {
                 if (account.getRequisite().equals(requisite)) {
                     result = account;
