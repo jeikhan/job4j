@@ -23,7 +23,7 @@ public class BankService {
      * Метод добавляет пользователя в систему. Перед этим
      * проверяет - существует ли этот пользователь в системе.
      * @param user модель пользователя содержит номер пасспорта
-     *             и имя пользователя.
+     * и имя пользователя.
      */
     public void addUser(User user) {
         users.putIfAbsent(user, new ArrayList<>());
