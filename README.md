@@ -41,7 +41,7 @@ job4j
 ## ToDo &middot; ![GitHub last commit](https://img.shields.io/github/last-commit/jeikhan/job4j)
 
 - [x] Implement actions when selecting menu items.
-- [x] Implement sort data.
+- [ ] Implement sort data.
 - [ ] Optimize algorithm.
 
 ## Contacts &middot; [![GitHub issues](https://img.shields.io/github/issues/jeikhan/job4j)](https://github.com/jeikhan/job4j/issues)
