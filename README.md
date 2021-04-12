@@ -1,4 +1,4 @@
-# JeiTracker &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j) ![GitHub last commit](https://img.shields.io/github/last-commit/jeikhan/job4j)
+# JeiTracker(beta) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j) ![GitHub last commit](https://img.shields.io/github/last-commit/jeikhan/job4j)
 
 JeiTracker is a console application, built in the Java language, that can store data with key "Name - ID" in its database.
 
@@ -14,10 +14,13 @@ The app contains the following features:
 ## Stack
 
 `Java 13`
+
 `jUnit 4.13.1`
-`Apache Maven 3.6.2`
+
 `Travis CI`
 `JaCoCo`
+
+`Apache Maven 3.6.2`
 `CheckStyle`
 
 <!--
@@ -29,18 +32,18 @@ The app contains the following features:
 ![](https://img.shields.io/badge/-CheckStyle-FCC204?style=flat&logo=CheckStyle&logoColor=white)
 -->
 
-## Getting started guide  &middot; `developing`
+## Getting started guide
 
 ### Installation
 
-- For the program to work, you need [JRE](https://ru.wikipedia.org/wiki/Java_Runtime_Environment):
-  - Go to the [java.com](https://www.java.com/ru/download/manual.jsp) ...
-  - Download and install the JRE package for your operating system ...
-- Clone (HTTPS): ``` git clone https://github.com/jeikhan/job4j.git ``` .
+- For the program to work, you need [JRE(Java Runtime Environment)](https://ru.wikipedia.org/wiki/Java_Runtime_Environment):
+  - Go to the [java.com](https://www.java.com/ru/download/manual.jsp)
+  - Download and install the JRE package for your operating system
+- Clone (HTTPS): `git clone https://github.com/jeikhan/job4j.git` 
 
 ### Usage
 
-- Go to folder ``` tracker ``` ...
+- Go to folder `tracker`
 
 ```
 job4j
@@ -49,8 +52,8 @@ job4j
         └── main/java/ru/job4j
             └── tracker
 ```
-- The press ``` Shift + right click ``` mouse button anywhere in the folder window and select the _"Open command window here"_ option from the context menu ...
-- Type in cmd ``` java -jar StartUI.jar ``` and press ``` Enter ```
+- The press `Shift + right click` mouse button anywhere in the folder window and select the _"Open command window here"_ option from the context menu
+- Type in command prompt `java -jar StartUI.jar` and press `Enter`
 
 ### Demo
 
