@@ -65,6 +65,6 @@ job4j
 
 The JeiTracker is open-sourced software licensed under the [MIT licensed](./LICENSE).
 
-## P.S. &middot; :snail:
+## P.S.
 
-Please, write all suggestions and comments in **Issues**. Thanks!
+Please, write all suggestions and comments in **[Issues](https://github.com/jeikhan/job4j/issues)**. Thanks!
