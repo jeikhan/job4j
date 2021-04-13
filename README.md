@@ -61,10 +61,10 @@ job4j
 - [x] Implement actions when selecting menu items.
 - [ ] Implement sort data.
 
-## Contacts
-
-**E-mail:** evgenii.kapaev@yandex.ru
-
 ## License
 
 The JeiTracker is open-sourced software licensed under the [MIT licensed](./LICENSE).
+
+## P.S. &middot; :snail:
+
+Please, write all suggestions and comments in **Issues**. Thanks!
