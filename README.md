@@ -13,23 +13,20 @@ The app contains the following features:
 
 ## Stack
 
-`Java 13`
+ `Java 13`
 
 `jUnit 4.13.1`
+`Hamcrest 2.2`
 
 `Travis CI`
 `JaCoCo`
 
 `Apache Maven 3.6.2`
+
 `CheckStyle`
 
-<!--
+<!-- Example badge
 [![Java](https://img.shields.io/badge/-Java_13-F60102?style=flat&logo=java&logoColor=white)](https://www.oracle.com/java/technologies/javase-downloads.html)
-![](https://img.shields.io/badge/-jUnit_4.13.1-259C5F?style=flat&logo=&logoColor=)
-![](https://img.shields.io/badge/-Apache_Maven_3.6.2-C71A36?style=flat&logo=apache-maven&logoColor=white)
-![](https://img.shields.io/badge/-Travis_CI-ECE8AA?style=flat&logo=Travis-CI&logoColor=black)
-![](https://img.shields.io/badge/-JaCoCo-7D0D00?style=flat&logo=JaCoCo&logoColor=white)
-![](https://img.shields.io/badge/-CheckStyle-FCC204?style=flat&logo=CheckStyle&logoColor=white)
 -->
 
 ## Getting started guide
