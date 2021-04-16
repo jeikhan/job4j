@@ -30,7 +30,7 @@ The app contains the following features:
 
 ### Run
 
-- Go to folder `tracker`
+- Go to folder [`tracker`](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_002/src/main/java/ru/job4j/tracker)
 
 ```
 job4j
@@ -39,7 +39,7 @@ job4j
         └── main/java/ru/job4j
             └── tracker
 ```
-- The press `Shift + right click` mouse button anywhere in the folder window and select the _"Open command window here"_ option from the context menu
+- Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu
 - Type in command prompt `java -jar StartUI.jar` and press `Enter`
 
 ### Demo
