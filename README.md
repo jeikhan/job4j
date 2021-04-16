@@ -13,26 +13,22 @@ The app contains the following features:
 
 ## Stack
 
-- `Java 13`
-- `jUnit 4.13.1` &middot; `Hamcrest 2.2`
-- `Travis CI` &middot; `JaCoCo`
-- `Apache Maven 3.6.2`
-- `CheckStyle`
+`Java 13` &middot; `jUnit 4.13.1` &middot; `Hamcrest 2.2` &middot; `Travis CI` &middot; `JaCoCo` &middot; `Apache Maven 3.6.2` &middot; `CheckStyle`
 
 <!-- Example badge
 [![Java](https://img.shields.io/badge/-Java_13-F60102?style=flat&logo=java&logoColor=white)](https://www.oracle.com/java/technologies/javase-downloads.html)
 -->
 
-## Getting started guide
+## Guide
 
-### Installation
+### Download and Install
 
 - For the program to work, you need [JRE(Java Runtime Environment)](https://ru.wikipedia.org/wiki/Java_Runtime_Environment):
   - Go to the [java.com](https://www.java.com/ru/download/manual.jsp)
   - Download and install the JRE package for your operating system
 - Clone (HTTPS): `git clone https://github.com/jeikhan/job4j.git` 
 
-### Usage
+### Run
 
 - Go to folder `tracker`
 
