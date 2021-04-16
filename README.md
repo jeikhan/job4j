@@ -1,4 +1,4 @@
-# JeiTracker(beta) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j) ![GitHub last commit](https://img.shields.io/github/last-commit/jeikhan/job4j)
+# JeiTracker &middot; ![version](https://img.shields.io/badge/release-beta-yellow) [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j) ![GitHub last commit](https://img.shields.io/github/last-commit/jeikhan/job4j)
 
 JeiTracker is a console application, built in the Java language, that can store data with key "Name - ID" in its database.
 
