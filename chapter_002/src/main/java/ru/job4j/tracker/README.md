@@ -30,7 +30,7 @@ The app contains the following features:
 
 ### Run
 
-- Go to folder [`tracker`](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_002/src/main/java/ru/job4j/tracker)
+- Go to folder `tracker`
 
 ```
 job4j
