@@ -13,7 +13,7 @@ The app contains the following features:
 
 ## Stack
 
-`Java_13` &bull; `JUnit_4.13.1` &bull; `Hamcrest_2.2` &bull; `Travis_CI` &bull; `JaCoCo` &bull; `Apache_Maven_3.6.2` &bull; `CheckStyle`
+**`Java_13`** &bull; **`JUnit_4.13.1`** &bull; **`Hamcrest_2.2`** &bull; **`Travis_CI`** &bull; **`JaCoCo`** &bull; **`Apache_Maven_3.6.2`** &bull; **`CheckStyle`**
 
 <!-- Example badge
 [![Java](https://img.shields.io/badge/-Java_13-F60102?style=flat&logo=java&logoColor=white)](https://www.oracle.com/java/technologies/javase-downloads.html)
