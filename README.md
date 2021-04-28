@@ -11,7 +11,7 @@ Below you can find current information about all projects in this repository.
 > Notes:
 > - asset **`.jar`** is one executable file of program (Windows / Linux);
 > - asset **`Source_code.zip`** contains all source code of repository (Windows);
-> - asset **`Source_code.tar.gz`** contains all source code of repository (Linux);
+> - asset **`Source_code.tar.gz`** contains all source code of repository (Linux).
 
 ## P.S. &middot; :snail:
 

@@ -31,7 +31,7 @@ The app contains the following features:
 > Notes: 
 > - asset **`jeitracker.jar`** is one executable file of program JeiTracker (Windows / Linux);
 > - asset **`Source_code.zip`** contains all source code of repository (Windows);
-> - asset **`Source_code.tar.gz`** contains all source code of repository (Linux);
+> - asset **`Source_code.tar.gz`** contains all source code of repository (Linux).
 
 ### Run
 
