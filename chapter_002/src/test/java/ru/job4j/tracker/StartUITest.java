@@ -1,6 +1,13 @@
 package ru.job4j.tracker;
 
 import org.junit.Test;
+import ru.job4j.tracker.actions.*;
+import ru.job4j.tracker.core.Tracker;
+import ru.job4j.tracker.io.Input;
+import ru.job4j.tracker.io.Output;
+import ru.job4j.tracker.stubs.StubInput;
+import ru.job4j.tracker.stubs.StubOutput;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 

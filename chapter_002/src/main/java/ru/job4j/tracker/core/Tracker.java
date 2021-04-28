@@ -1,4 +1,6 @@
-package ru.job4j.tracker;
+package ru.job4j.tracker.core;
+
+import ru.job4j.tracker.sort.Item;
 
 import java.util.ArrayList;
 import java.util.List;

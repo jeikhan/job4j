@@ -1,5 +1,9 @@
 package ru.job4j.tracker;
 
+import ru.job4j.tracker.actions.*;
+import ru.job4j.tracker.core.Tracker;
+import ru.job4j.tracker.io.*;
+
 /**
  * Консольное приложение для работы с классом Tracker
  * @author Evgeniy Kapaev

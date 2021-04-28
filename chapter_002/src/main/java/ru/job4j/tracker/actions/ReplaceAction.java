@@ -1,4 +1,9 @@
-package ru.job4j.tracker;
+package ru.job4j.tracker.actions;
+
+import ru.job4j.tracker.actions.UserAction;
+import ru.job4j.tracker.core.Tracker;
+import ru.job4j.tracker.io.Input;
+import ru.job4j.tracker.io.Output;
 
 /**
  * Изменение существующей заявки.

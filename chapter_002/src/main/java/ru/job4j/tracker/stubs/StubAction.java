@@ -1,4 +1,8 @@
-package ru.job4j.tracker;
+package ru.job4j.tracker.stubs;
+
+import ru.job4j.tracker.io.Input;
+import ru.job4j.tracker.actions.UserAction;
+import ru.job4j.tracker.core.Tracker;
 
 public class StubAction implements UserAction {
     private boolean call = false;
