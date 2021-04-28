@@ -7,7 +7,11 @@ import java.util.function.Predicate;
  * Коллекции.
  * Задача. Сделать поиск пользователя в справочнике
  * по полям Имя, Фамилия, Телефон, Адрес.
+ * upd: добавить реализацию функции высшего порядка
+ * в метод поиска пользователя по справочнику.
+ *
  * @author Evgenii Kapaev
+ * @since 28.04.2021
  */
 public class PhoneDictionary {
     private ArrayList<Person> persons = new ArrayList<>();
