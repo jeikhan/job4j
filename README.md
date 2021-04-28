@@ -1,3 +1,7 @@
+# Welcome to job4j!
+
+Below you can find current information about all projects in this repository.
+
 ## Projects &middot; :rocket:
 
 | # | Project | License | Description | UI | Release | Download |
