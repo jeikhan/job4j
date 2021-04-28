@@ -1,4 +1,4 @@
-# JeiTracker 1.3 &middot; ![version](https://img.shields.io/badge/release-beta-yellow) [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j)
+# JeiTracker 1.4 &middot; ![version](https://img.shields.io/badge/release-beta-yellow) [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j)
 
 JeiTracker is a console application, built in the Java language, that can store data with key "Name - ID" temporarily (**without database**).
 
@@ -23,28 +23,55 @@ The app contains the following features:
 
 ### Download and Install
 
-- For the program to work, you need [JRE(Java Runtime Environment)](https://ru.wikipedia.org/wiki/Java_Runtime_Environment):
+1. For the program to work, you need [JRE](https://ru.wikipedia.org/wiki/Java_Runtime_Environment "Java Runtime Environment"):
     - Go to the [java.com](https://www.java.com/ru/download/manual.jsp)
     - Download and install the JRE package for your operating system
-- Download the [Latest release (.zip)](https://github.com/jeikhan/job4j/releases/tag/v.1.3-beta)
+2. Download the [latest release](https://github.com/jeikhan/job4j/releases) of **`JeiTracker`**.
+
+> Notes: 
+> - asset **`jeitracker.jar`** is one executable file of program JeiTracker (Windows / Linux);
+> - asset **`Source_code.zip`** contains all source code of repository (Windows);
+> - asset **`Source_code.tar.gz`** contains all source code of repository (Linux);
 
 ### Run
 
-- Go to folder `tracker`
+#### `jeitracker.jar`
+
+1. Go to your `download folder`
+2. Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu
+3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`
+
+#### `Source code.zip`
+
+1. Go to package `build`
 
 ```
 job4j
-└── chapter_002
-    └── src
-        └── main/java/ru/job4j
-            └── tracker
+└─ chapter_002
+   └─ src
+      └─ main
+         └─ java
+            └─ ru
+               └─ job4j
+                  └─ tracker
+                     ├─ actions
+                     ├─ build
+                     │  └─ jeitracker.jar <<<
+                     ├─ core
+                     ├─ io
+                     ├─ sort
+                     ├─ stubs
+                     ├─ package-info.java
+                     ├─ README.md
+                     └─ StartUI.java
 ```
-- Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu
-- Type in command prompt `java -jar StartUI.jar` and press `Enter`
+
+2. Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu
+3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`
 
 ### Demo
 
-![Console App](https://i.ibb.co/DbZczCw/console-app.png)
+> Coming soon...
 
 ## ToDo
 
