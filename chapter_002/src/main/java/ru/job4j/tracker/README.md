@@ -26,8 +26,8 @@ The app contains the following features:
 ### Download and Install
 
 1. For the program to work, you need [**JRE**](https://ru.wikipedia.org/wiki/Java_Runtime_Environment "Java Runtime Environment"):
-    - Go to the [**java.com**](https://www.java.com/ru/download/manual.jsp)
-    - Download and install the JRE package for your operating system
+    - Go to the [**java.com**](https://www.java.com/ru/download/manual.jsp)...
+    - Download and install the JRE package for your operating system...
 2. Download the [**latest release**](https://github.com/jeikhan/job4j/releases) of **JeiTracker**.
 
 > Notes: 
@@ -39,35 +39,35 @@ The app contains the following features:
 
 #### `jeitracker.jar`
 
-1. Go to your `download folder`
-2. Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu
-3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`
+1. Go to your `download folder`...
+2. Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu...
+3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`.
 
 #### `Source code.zip`
 
-1. Unzip with `Windows zip-tool` or [`7zip`](https://www.7-zip.org/) tool
+1. Unzip with `Windows zip-tool` or [`7zip`](https://www.7-zip.org/) tool...
 2. Go to...
 
 ```
 job4j/chapter_002/src/main/java/ru/job4j/tracker/build_app
 ```
 
-2. Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu
-3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`
+2. Press `Shift + Right Mouse Button` anywhere in the folder `build_app` and select the _"Open command window here"_ option from the context menu...
+3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`.
 
 #### `Source code.tar.gz`
 
 > Warning! Recommended for Linux
 
-1. Unzip with `tar xvzf name_archive.tar.gz` in terminal
+1. Unzip with `tar xvzf name_archive.tar.gz` in terminal...
 2. Go to... 
 
 ```
 job4j/chapter_002/src/main/java/ru/job4j/tracker
 ```
 
-3. Press `Right Mouse Button` on the folder `build_app` and select the _"Open in terminal"_ option from the context menu
-4. Type in terminal `java -jar jeitracker.jar` and press `Enter`
+3. Press `Right Mouse Button` on the folder `build_app` and select the _"Open in terminal"_ option from the context menu...
+4. Type in terminal `java -jar jeitracker.jar` and press `Enter`.
 
 ### Demo
 
