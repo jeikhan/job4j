@@ -1,4 +1,4 @@
-# JeiTracker 1.4 &middot; ![version](https://img.shields.io/badge/release-beta-yellow) [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j)
+# JeiTracker 1.4.1 &middot; ![version](https://img.shields.io/badge/release-LTS-brightgreen) [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j)
 
 JeiTracker is a console application, built in the Java language, that can store data with key "Name - ID" temporarily (**without database**).
 
@@ -17,21 +17,23 @@ The app contains the following features:
 
 <!-- Example badge
 [![Java](https://img.shields.io/badge/-Java_13-F60102?style=flat&logo=java&logoColor=white)](https://www.oracle.com/java/technologies/javase-downloads.html)
+
+![version](https://img.shields.io/badge/release-beta-yellow)
 -->
 
 ## Guide
 
 ### Download and Install
 
-1. For the program to work, you need [JRE](https://ru.wikipedia.org/wiki/Java_Runtime_Environment "Java Runtime Environment"):
-    - Go to the [java.com](https://www.java.com/ru/download/manual.jsp)
+1. For the program to work, you need [**JRE**](https://ru.wikipedia.org/wiki/Java_Runtime_Environment "Java Runtime Environment"):
+    - Go to the [**java.com**](https://www.java.com/ru/download/manual.jsp)
     - Download and install the JRE package for your operating system
-2. Download the [latest release](https://github.com/jeikhan/job4j/releases) of **`JeiTracker`**.
+2. Download the [**latest release**](https://github.com/jeikhan/job4j/releases) of **JeiTracker**.
 
 > Notes: 
-> - asset **`jeitracker.jar`** is one executable file of program JeiTracker (Windows / Linux);
-> - asset **`Source_code.zip`** contains all source code of repository (Windows);
-> - asset **`Source_code.tar.gz`** contains all source code of repository (Linux).
+> - asset `jeitracker.jar` is one executable file of program JeiTracker (Windows / Linux);
+> - asset `Source_code.zip` contains all source code of repository (Windows);
+> - asset `Source_code.tar.gz` contains all source code of repository (Linux).
 
 ### Run
 
@@ -43,31 +45,29 @@ The app contains the following features:
 
 #### `Source code.zip`
 
-1. Go to package `build`
+1. Unzip with `Windows zip-tool` or [`7zip`](https://www.7-zip.org/) tool
+2. Go to...
 
 ```
-job4j
-└─ chapter_002
-   └─ src
-      └─ main
-         └─ java
-            └─ ru
-               └─ job4j
-                  └─ tracker
-                     ├─ actions
-                     ├─ build
-                     │  └─ jeitracker.jar <<<
-                     ├─ core
-                     ├─ io
-                     ├─ sort
-                     ├─ stubs
-                     ├─ package-info.java
-                     ├─ README.md
-                     └─ StartUI.java
+job4j/chapter_002/src/main/java/ru/job4j/tracker/build_app
 ```
 
 2. Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu
 3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`
+
+#### `Source code.tar.gz`
+
+> Warning! Recommended for Linux
+
+1. Unzip with `tar xvzf name_archive.tar.gz` in terminal
+2. Go to... 
+
+```
+job4j/chapter_002/src/main/java/ru/job4j/tracker
+```
+
+3. Press `Right Mouse Button` on the folder `build_app` and select the _"Open in terminal"_ option from the context menu
+4. Type in terminal `java -jar jeitracker.jar` and press `Enter`
 
 ### Demo
 
