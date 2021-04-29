@@ -37,13 +37,13 @@ The app contains the following features:
 
 ### Run
 
-#### `jeitracker.jar`
+#### &bull; `jeitracker.jar`
 
 1. Go to your `download folder`...
 2. Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu...
 3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`.
 
-#### `Source code.zip`
+#### &bull; `Source code.zip`
 
 1. Unzip with `Windows zip-tool` or [`7zip`](https://www.7-zip.org/) tool...
 2. Go to...
@@ -52,10 +52,10 @@ The app contains the following features:
 job4j/chapter_002/src/main/java/ru/job4j/tracker/build_app
 ```
 
-2. Press `Shift + Right Mouse Button` anywhere in the folder `build_app` and select the _"Open command window here"_ option from the context menu...
-3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`.
+3. Press `Shift + Right Mouse Button` anywhere in the folder `build_app` and select the _"Open command window here"_ option from the context menu...
+4. Type in command prompt `java -jar jeitracker.jar` and press `Enter`.
 
-#### `Source code.tar.gz`
+#### &bull; `Source code.tar.gz`
 
 > Warning! Recommended for Linux
 
