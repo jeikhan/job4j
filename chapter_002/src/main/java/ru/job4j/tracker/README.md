@@ -1,4 +1,4 @@
-# JeiTracker 1.4.1 &middot; ![version](https://img.shields.io/badge/release-LTS-brightgreen) [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)
+# JeiTracker &middot; ![version](https://img.shields.io/badge/version-1.4.1-blue) ![release](https://img.shields.io/badge/release-LTS-brightgreen) [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)
 
 JeiTracker is a console application, built in the Java language, that can store data with key "**Name - ID**" temporarily (**without database**).
 
