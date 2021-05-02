@@ -4,23 +4,23 @@ Below you can find information about the **topics** covered in the course, **sta
 
 ## Topics &middot; :loudspeaker:
 
-### Language syntax
+###### Language syntax
 
 `JVM` &bull; `Data_Types` &bull; `Branch_operators` &bull; `Loops` &bull; `Arrays`
 
-### OOP
+###### OOP
 
 `Inheritance` &bull; `Encapsulation` &bull; `Polymorphism` &bull; `Inner_classes` &bull; `Abstract_classes` &bull; `Exceptions`
 
-### Design patterns
+###### Design patterns
 
 `Singleton` &bull; `Decorator` &bull; `Strategy` &bull; `Factory`
 
-### Collections
+###### Collections
 
 `Collections_Framework` &bull; `Generic` &bull; `Sorting` &bull; `Iterators` &bull; `List` &bull; `Set` &bull; `Map` &bull; `ArrayList`
 
-### Functional programming
+###### Functional programming
 
 `Lambda` &bull; `Stream_API`
 
