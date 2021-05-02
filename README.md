@@ -1,4 +1,4 @@
-# Welcome &middot; job4j
+# job4j &middot; [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j)
 
 Below you can find information about the **topics** covered in the course, **stack** and all **projects** in this repository.
 
