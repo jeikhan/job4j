@@ -1,6 +1,6 @@
 # JeiTracker 1.4.1 &middot; ![version](https://img.shields.io/badge/release-LTS-brightgreen) [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/jeikhan/job4j/blob/hotfix_3/LICENSE)  [![Build Status](https://travis-ci.com/jeikhan/job4j.svg?branch=hotfix_3)](https://travis-ci.com/jeikhan/job4j) [![codecov](https://codecov.io/gh/jeikhan/job4j/branch/hotfix_3/graph/badge.svg?token=WUPRSSWI6Y)](https://codecov.io/gh/jeikhan/job4j)
 
-JeiTracker is a console application, built in the Java language, that can store data with key "Name - ID" temporarily (**without database**).
+JeiTracker is a console application, built in the Java language, that can store data with key "**Name - ID**" temporarily (**without database**).
 
 The app contains the following features:
 
@@ -37,37 +37,37 @@ The app contains the following features:
 
 ### Run
 
-#### &bull; `jeitracker.jar`
+### `jeitracker.jar`
 
-1. Go to your `download folder`...
+1. Go to your **download folder**...
 2. Press `Shift + Right Mouse Button` anywhere in the folder window and select the _"Open command window here"_ option from the context menu...
 3. Type in command prompt `java -jar jeitracker.jar` and press `Enter`.
 
-#### &bull; `Source code.zip`
+### `Source code.zip`
 
-1. Unzip with `Windows zip-tool` or [`7zip`](https://www.7-zip.org/) tool...
+1. Unzip with windows **zip-tool** or [**7zip**](https://www.7-zip.org/) tool...
 2. Go to...
 
 ```
 job4j/chapter_002/src/main/java/ru/job4j/tracker/build_app
 ```
 
-3. Press `Shift + Right Mouse Button` anywhere in the folder `build_app` and select the _"Open command window here"_ option from the context menu...
+3. Press `Shift + Right Mouse Button` anywhere in the folder **build_app** and select the _"Open command window here"_ option from the context menu...
 4. Type in command prompt `java -jar jeitracker.jar` and press `Enter`.
 
-#### &bull; `Source code.tar.gz`
+### `Source code.tar.gz`
 
 > Warning! Recommended for Linux
 
-1. Unzip with `tar xvzf name_archive.tar.gz` in terminal...
+1. Unzip with command `tar xvzf name_archive.tar.gz` in terminal...
 2. Go to... 
 
 ```
 job4j/chapter_002/src/main/java/ru/job4j/tracker
 ```
 
-3. Press `Right Mouse Button` on the folder `build_app` and select the _"Open in terminal"_ option from the context menu...
-4. Type in terminal `java -jar jeitracker.jar` and press `Enter`.
+3. Press `Right Mouse Button` on the folder **build_app** and select the _"Open in terminal"_ option from the context menu...
+4. Type in terminal command `java -jar jeitracker.jar` and press `Enter`.
 
 ### Demo
 
