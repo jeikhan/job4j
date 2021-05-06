@@ -4,6 +4,18 @@ Below you can find information about the **topics** covered in the course, **sta
 
 ## Topics &middot; :loudspeaker:
 
+| Language syntax | OOP | Design patterns | Collections | Functional programming |
+| :-------------: | :-: | :-------------: | :---------: | :--------------------: |
+| JVM | [Inheritance](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_002/src/main/java/ru/job4j/inheritance) | [Singleton](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_002/src/main/java/ru/job4j/singleton) | Collections Framework | Lambda |
+| Data Types | [Encapsulation](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_002/src/main/java/ru/job4j/encapsulation) | Decorator | Generic | Stream API |
+| Branch operators | [Polymorphism](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_002/src/main/java/ru/job4j/pojo) | [Strategy](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_002/src/main/java/ru/job4j/strategy) | Sorting |  |
+| [Loops](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_001/src/main/java/ru/job4j/loop) | Inner classes | Factory | Iterators |  |
+| [Arrays](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_001/src/main/java/ru/job4j/array) | Abstract classes |  | List |  |
+|  | [Exceptions](https://github.com/jeikhan/job4j/tree/hotfix_3/chapter_002/src/main/java/ru/job4j/exception) |  | Set |  |
+|  |  |  | Map |  |
+|  |  |  | ArrayList |  |
+
+<!--
 ###### Language syntax
 
 `JVM` &bull; `Data_Types` &bull; `Branch_operators` &bull; `Loops` &bull; `Arrays`
@@ -23,6 +35,7 @@ Below you can find information about the **topics** covered in the course, **sta
 ###### Functional programming
 
 `Lambda` &bull; `Stream_API`
+-->
 
 ## Stack &middot; :dna:
 
