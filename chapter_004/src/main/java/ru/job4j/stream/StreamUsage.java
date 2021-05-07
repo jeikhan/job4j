@@ -17,9 +17,9 @@ public class StreamUsage {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(-9, -2, 3, 4, 0, -4, 1, -5));
         System.out.print("Массив чисел до фильтрации: " + numbers + "\n");
-        List<Integer> positive = numbers.stream().filter(
-                n -> n > 0
-        ).collect(Collectors.toList());
+        List<Integer> positive = numbers.stream()
+                .filter(n -> n > 0)
+                .collect(Collectors.toList());
         System.out.print("Массив чисел после фильтрации: " + positive);
     }
 }
