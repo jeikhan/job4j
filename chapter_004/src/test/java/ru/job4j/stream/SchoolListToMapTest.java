@@ -24,4 +24,22 @@ public class SchoolListToMapTest {
         );
         assertThat(actual, is(expected));
     }
+
+    @Test
+    public void whenConvertListToMapWithDup() {
+        SchoolListToMap convert = new SchoolListToMap();
+        StudentMap student1 = new StudentMap(new Student(30, "Ivanov"), "Ivanov");
+        StudentMap student2 = new StudentMap(new Student(60, "Petrov"), "Petrov");
+        StudentMap student3 = new StudentMap(new Student(30, "Ivanov"), "Ivanov");
+        StudentMap student4 = new StudentMap(new Student(90, "Sidorov"), "Sidorov");
+        StudentMap student5 = new StudentMap(new Student(60, "Petrov"), "Petrov");
+        Map<String, StudentMap> actual = convert
+                .convert(List.of(student1, student2, student3, student4, student5));
+        Map<String, StudentMap> expected = Map.of(
+                "Ivanov", student1,
+                "Petrov", student2,
+                "Sidorov", student4
+        );
+        assertThat(actual, is(expected));
+    }
 }
