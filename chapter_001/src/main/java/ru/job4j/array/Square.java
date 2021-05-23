@@ -18,7 +18,7 @@ public class Square {
     public static int[] calculate(int bound) {
         int[] result = new int[bound];
         for (int i = 0; i < result.length; i++) {
-            result[i] = (i + 1) * (i + 1);
+            result[i] = i * i;
         }
         return result;
     }
