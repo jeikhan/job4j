@@ -4,8 +4,8 @@ package ru.job4j.array;
  * Class Turn переворачивает массив
  *
  * @author Evgeniy Kapaev
- * @since 27.09.19
  * @version 1.0
+ * @since 27.09.19
  */
 public class Turn {
 
@@ -17,7 +17,7 @@ public class Turn {
      *
      * @param array - исходный массив чисел
      * @return array - возвращает перевернутый
-     *                 массив
+     * массив
      */
     public int[] back(int[] array) {
         for (int i = 0; i < (array.length / 2); i++) {
