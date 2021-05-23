@@ -20,7 +20,7 @@ public class SortSelected {
      * @return data - возвращает отсортированный массив
      */
     public static int[] sort(int[] data) {
-        int minimum = MinDiapason.findMin(data, 0, data.length);
+        int minimum = MinDiapason.findMin(data, 0, data.length - 1);
         int index = FindLoopMod.indexOf(data, minimum, 0, data.length);
         int temp = data[0];
         data[0] = minimum;
