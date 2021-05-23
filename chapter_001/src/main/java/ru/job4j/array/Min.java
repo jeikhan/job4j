@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
 /**
- * Class Min ищет минимальный элемент массива
+ * Class Min ищет минимальный элемент в массиве.
  *
  * @author Evgeniy Kapaev
  * @version 1.0
