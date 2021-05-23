@@ -15,12 +15,12 @@ public class Min {
      * @return - возвращает минимальное значение массива
      */
     public static int findMin(int[] array) {
-        int minimum = array[0];
-        for (int index = 0; index < array.length; index++) {
-            if (array[index] < minimum) {
-                minimum = array[index];
+        int min = array[0];
+        for (int index = 1; index < array.length; index++) {
+            if (array[index] < min) {
+                min = array[index];
             }
         }
-        return minimum;
+        return min;
     }
 }
