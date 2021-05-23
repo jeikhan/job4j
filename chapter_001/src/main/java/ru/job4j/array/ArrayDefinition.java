@@ -2,12 +2,13 @@ package ru.job4j.array;
 
 public class ArrayDefinition {
     public static void main(String[] args) {
-        int[] numbers = new int[5];
-        for (int index = 0; index < numbers.length; index++) {
-            numbers[index] = index * 2 + 3;
-        }
-        for (int index = 0; index < numbers.length; index++) {
-            System.out.print(numbers[index] + " ");
+        String[] names = new String[4];
+        names[0] = "Вася";
+        names[1] = "Паша";
+        names[2] = "Саша";
+        names[3] = "Валя";
+        for (int i = 0; i < 4; i++) {
+            System.out.println(names[i]);
         }
     }
 }
