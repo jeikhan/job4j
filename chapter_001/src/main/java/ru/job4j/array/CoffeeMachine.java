@@ -8,11 +8,10 @@ public class CoffeeMachine {
         int[] rsl = new int[100];
         int size = 0;
         int mod = money - price;
-        for (int i = 0; i < coins.length; i++) {
-            while (mod >= coins[i]) {
-                mod -= coins[i];
-                rsl[size] = coins[i];
-                size++;
+        for (int coin : coins) {
+            while (mod - coin >= 0) {
+                mod -= coin;
+                rsl[size++] = coin;
             }
         }
         return Arrays.copyOf(rsl, size);
