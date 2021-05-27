@@ -5,11 +5,11 @@ import ru.job4j.tracker.core.Tracker;
 import ru.job4j.tracker.io.*;
 import ru.job4j.tracker.sort.Item;
 
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
  * Консольное приложение для работы с классом Tracker
+ *
  * @author Evgeniy Kapaev
  * @version 1.0
  */
@@ -23,7 +23,8 @@ public class StartUI {
 
     /**
      * Взаимодействие с пользователем
-     * @param input - вводимые данные
+     *
+     * @param input   - вводимые данные
      * @param tracker - Tracker
      */
     public void init(Input input, Tracker tracker, UserAction[] actions) {
@@ -52,6 +53,7 @@ public class StartUI {
 
     /**
      * Main
+     *
      * @param args - параметры
      */
     public static void main(String[] args) {
