@@ -3,6 +3,10 @@ package ru.job4j.tracker;
 import ru.job4j.tracker.actions.*;
 import ru.job4j.tracker.core.Tracker;
 import ru.job4j.tracker.io.*;
+import ru.job4j.tracker.sort.Item;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * Консольное приложение для работы с классом Tracker
@@ -51,6 +55,9 @@ public class StartUI {
      * @param args - параметры
      */
     public static void main(String[] args) {
+        Item item = new Item("Date");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
+        System.out.println("=== " + item.getCreated().format(formatter) + " ===");
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(output, new ConsoleInput());
         Tracker tracker = new Tracker();

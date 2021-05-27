@@ -1,5 +1,6 @@
 package ru.job4j.tracker.sort;
 
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 /**
@@ -11,9 +12,14 @@ import java.util.Objects;
 public class Item implements Comparable<Item> {
     private String id;
     private String name;
+    private LocalDateTime created = LocalDateTime.now();
 
     public Item(String name) {
         this.name = name;
+    }
+
+    public LocalDateTime getCreated() {
+        return created;
     }
 
     public String getId() {
