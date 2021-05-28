@@ -9,8 +9,8 @@ public class Library {
 
     /**
      * Создание массива книг, перестановка местами, вывод
-     * книги с определенным названием на консоль
-     * @param args
+     * книги с определенным названием на консоль.
+     * @param args аргументы.
      */
     public static void main(String[] args) {
         Book book = new Book("Five Weeks in a Balloon", 300);
@@ -26,8 +26,7 @@ public class Library {
         books[2] = book2;
         books[3] = book3;
 
-        for (int i = 0; i < books.length; i++) {
-            Book read = books[i];
+        for (Book read : books) {
             System.out.println(read.getName() + " - " + read.getCountOfPages());
         }
 
@@ -37,15 +36,13 @@ public class Library {
         books[0] = books[3];
         books[3] = tmp;
 
-        for (int i = 0; i < books.length; i++) {
-            Book read = books[i];
+        for (Book read : books) {
             System.out.println(read.getName() + " - " + read.getCountOfPages());
         }
 
         System.out.println("Show book with name is Clean code");
 
-        for (int i = 0; i < books.length; i++) {
-            Book read = books[i];
+        for (Book read : books) {
             if ("Clean code".equals(read.getName())) {
                 System.out.println(read.getName() + " - " + read.getCountOfPages());
             }
