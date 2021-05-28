@@ -46,7 +46,7 @@ public class Library {
 
         for (int i = 0; i < books.length; i++) {
             Book read = books[i];
-            if (read.getName().equals("Clean code")) {
+            if ("Clean code".equals(read.getName())) {
                 System.out.println(read.getName() + " - " + read.getCountOfPages());
             }
         }
