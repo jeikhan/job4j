@@ -4,51 +4,39 @@ import ru.job4j.tracker.sort.Item;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 /**
  * Система заявок - Tracker. Консольное приложение.
+ *
  * @author Evgeniy Kapaev
  * @version 1.1
  */
 public class Tracker {
 
-    /** Массив для хранения заявок */
     List<Item> items = new ArrayList<>();
+    private int ids = 1;
 
     /**
      * Добавляет заявку в хранилище
+     *
      * @param item - новая заявка
      */
     public List<Item> add(Item item) {
-        item.setId(generateId());
-        this.items.add(item);
+        item.setId(ids++);
+        items.add(item);
         return items;
     }
 
     /**
-     * Возвращает уникальный ключ для заявки
-     * @return уникальный ключ
+     * Поиск позиции заявки по id
+     *
+     * @return позиция заявки
      */
-    private String generateId() {
-        Random rm = new Random();
-        return String.valueOf(Math.abs(rm.nextLong() + System.currentTimeMillis()));
-    }
-
-    /**
-     * Поиск и замена существующей заявки
-     * @param item - новая заявка
-     * @param id - уникальный ключ существующей заявки
-     * @return результат операции("успешно" или "не успешно")
-     */
-    public boolean replace(String item, String id) {
-        boolean result = false;
+    private int indexOf(int id) {
+        int result = -1;
         for (int index = 0; index < items.size(); index++) {
-            if (items.get(index).getId().equals(id)) {
-                Item newItem = new Item(item);
-                newItem.setId(id);
-                items.set(index, newItem);
-                result = true;
+            if (items.get(index).getId() == id) {
+                result = index;
                 break;
             }
         }
@@ -56,15 +44,35 @@ public class Tracker {
     }
 
     /**
+     * Поиск и замена существующей заявки
+     *
+     * @param item - новая заявка
+     * @param id   - уникальный ключ существующей заявки
+     * @return результат операции("успешно" или "не успешно")
+     */
+    public boolean replace(String item, int id) {
+        boolean result = false;
+        int index = indexOf(id);
+        if (items.get(index).getId() == id) {
+            Item newItem = new Item(item);
+            newItem.setId(id);
+            items.set(index, newItem);
+            result = true;
+        }
+        return result;
+    }
+
+    /**
      * Поиск и удаление заявки по id
+     *
      * @param id - уникальный ключ существующей заявки
      * @return результат операции("успешно" или "не успешно")
      */
-    public boolean delete(String id) {
+    public boolean delete(int id) {
         boolean result = false;
-        for (int i = 0; i < items.size(); i++) {
-            if (items.get(i).getId().equals(id)) {
-                items.remove(items.get(i));
+        for (int index = 0; index < items.size(); index++) {
+            if (items.get(index).getId() == id) {
+                items.remove(items.get(index));
                 result = true;
                 break;
             }
@@ -74,14 +82,16 @@ public class Tracker {
 
     /**
      * Вовзращает список всех заявок
+     *
      * @return массив заявок
      */
     public List<Item> findAll() {
-        return this.items;
+        return items;
     }
 
     /**
      * Возвращает заявки найденные по имени
+     *
      * @param key - ключевой элемент
      * @return заявки совпавшие при сравнении name и key
      */
@@ -100,17 +110,13 @@ public class Tracker {
 
     /**
      * Возвращает заявки найденные по id
+     *
      * @param id - уникальный ключ
      * @return заявки совпавшие при сравнении id с аргументом
      */
-    public Item findById(String id) {
-        Item result = null;
-        for (int index = 0; index < this.items.size(); index++) {
-            if (items.get(index).getId().equals(id)) {
-                result = items.get(index);
-            }
-        }
-        return result;
+    public Item findById(int id) {
+        int index = indexOf(id);
+        return index != -1 ? items.get(index) : null;
     }
 
 }

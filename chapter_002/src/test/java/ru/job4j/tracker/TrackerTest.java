@@ -7,8 +7,8 @@ import ru.job4j.tracker.sort.Item;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.MatcherAssert.*;
 
 public class TrackerTest {
 
@@ -58,5 +58,16 @@ public class TrackerTest {
         tracker.add(test2);
         tracker.add(test3);
         assertThat(tracker.findById(test2.getId()), is(test2));
+    }
+
+    @Test
+    public void whenReplace() {
+        Tracker tracker = new Tracker();
+        Item bug = new Item("Bug");
+        tracker.add(bug);
+        int id = bug.getId();
+        Item bugWithDesc = new Item("Bug with description");
+        tracker.replace(bugWithDesc.getName(), id);
+        assertThat(tracker.findById(id).getName(), is("Bug with description"));
     }
 }
