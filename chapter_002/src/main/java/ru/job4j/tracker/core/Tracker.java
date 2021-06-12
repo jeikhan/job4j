@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class Tracker {
 
-    List<Item> items = new ArrayList<>();
+    private final List<Item> items = new ArrayList<>();
     private int ids = 1;
 
     /**
@@ -70,12 +70,10 @@ public class Tracker {
      */
     public boolean delete(int id) {
         boolean result = false;
-        for (int index = 0; index < items.size(); index++) {
-            if (items.get(index).getId() == id) {
-                items.remove(items.get(index));
-                result = true;
-                break;
-            }
+        int index = indexOf(id);
+        if (items.get(index).getId() == id) {
+            items.remove(items.get(index));
+            result = true;
         }
         return result;
     }
