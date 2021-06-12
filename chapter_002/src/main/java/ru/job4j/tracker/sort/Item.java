@@ -59,4 +59,11 @@ public class Item implements Comparable<Item> {
         Item item = (Item) obj;
         return Objects.equals(name, item.name);
     }
+
+    @Override
+    public String toString() {
+        return "Формат данных: "
+                + name
+                + " (id)";
+    }
 }
