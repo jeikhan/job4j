@@ -10,9 +10,9 @@ import java.util.Objects;
  * @version 1.0
  */
 public class Item implements Comparable<Item> {
-    private String id;
+    private int id;
     private String name;
-    private LocalDateTime created = LocalDateTime.now();
+    private final LocalDateTime created = LocalDateTime.now();
 
     public Item(String name) {
         this.name = name;
@@ -22,11 +22,11 @@ public class Item implements Comparable<Item> {
         return created;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
