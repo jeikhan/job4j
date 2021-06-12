@@ -53,7 +53,8 @@ public class Tracker {
     public boolean replace(String item, int id) {
         boolean result = false;
         int index = indexOf(id);
-        if (items.get(index).getId() == id) {
+        boolean rsl = index != -1;
+        if (rsl) {
             Item newItem = new Item(item);
             newItem.setId(id);
             items.set(index, newItem);
@@ -71,7 +72,8 @@ public class Tracker {
     public boolean delete(int id) {
         boolean result = false;
         int index = indexOf(id);
-        if (items.get(index).getId() == id) {
+        boolean rsl = index != -1;
+        if (rsl) {
             items.remove(items.get(index));
             result = true;
         }
