@@ -58,10 +58,8 @@ public class StartUI {
      */
     public static void main(String[] args) {
         Item timeDate = new Item("timeDate");
-        Item itemInfo = new Item("name");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
         System.out.println("=== " + timeDate.getCreated().format(formatter) + " ===");
-        System.out.println("== " + itemInfo + " ==");
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(output, new ConsoleInput());
         Tracker tracker = new Tracker();
