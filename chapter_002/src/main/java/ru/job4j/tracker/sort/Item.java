@@ -62,8 +62,9 @@ public class Item implements Comparable<Item> {
 
     @Override
     public String toString() {
-        return "Формат данных: "
-                + name
-                + " (id)";
+        return name
+                + " ("
+                + id
+                + ")";
     }
 }
