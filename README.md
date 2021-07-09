@@ -32,9 +32,5 @@ Below you can find current information about all **projects**, **stack** and **t
 | Data Types | Encapsulation | Decorator | Generic | Stream API |
 | Branch operators | Polymorphism | Strategy | Sorting |  |
 | Loops | Inner classes | Factory | Iterators |  |
-| Arrays | Abstract classes |  | List |  |
-|  | Exceptions |  | Set |  |
-|  |  |  | Map |  |
-|  |  |  | ArrayList |  |
-
-> More information about the course content is available in [RU](https://github.com/jeikhan/job4j/blob/hotfix_3/ContentRU.md)
+| Arrays | Abstract classes |  | List, Set, Map |  |
+|  | Exceptions |  |  |  |
