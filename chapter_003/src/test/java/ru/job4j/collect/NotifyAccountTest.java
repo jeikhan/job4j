@@ -24,4 +24,20 @@ public class NotifyAccountTest {
         );
         assertThat(NotifyAccount.sent(accounts), is(expect));
     }
+
+    @Test
+    public void sentWithDuplicate() {
+        List<Account> accounts = Arrays.asList(
+                new Account("123", "Evgenii Kapaev", "eDer3432f"),
+                new Account("142", "Evgenii Kapaev", "000001"),
+                new Account("123", "Evgenii Kapaev", "eDer3432f")
+        );
+        HashSet<Account> expect = new HashSet<>(
+                Arrays.asList(
+                        new Account("123", "Evgenii Kapaev", "eDer3432f"),
+                        new Account("142", "Evgenii Kapaev", "000001")
+                )
+        );
+        assertThat(NotifyAccount.sent(accounts), is(expect));
+    }
 }
