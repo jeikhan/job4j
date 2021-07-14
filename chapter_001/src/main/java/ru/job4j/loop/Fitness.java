@@ -10,10 +10,9 @@ public class Fitness {
 
     /**
      * Метод calculate инкрементирует количество месяцев
-     * через цикл while до тех пор, пока ivan < nikolay
      * @param ivan - значение тягового веса Ивана
      * @param nikolay - значение тягового веса Николая
-     * @return month - количество месяцев, прошедщих до
+     * @return month - количество месяцев прошедщих до
      * того как Иван обогнал Николая
      */
     public int calculate(int ivan, int nikolay) {
