@@ -10,19 +10,7 @@ Below you can find current information about all **projects**, **stack** and **t
 
 ## Stack
 
-`Java`
-
-`JUnit` &bull; `Hamcrest`
-
-`Travis_CI` &bull; `JaCoCo` &bull; `Codecov`
-
-`Apache_Maven` &bull; `CheckStyle`
-
-`Windows_Command_Prompt`
-
-`Git` &bull; `GitHub`
-
-`IntelliJ_IDEA`
+`Java` &bull; `JUnit` &bull; `Hamcrest` &bull; `Travis_CI` &bull; `JaCoCo` &bull; `Codecov` &bull; `Apache_Maven` &bull; `CheckStyle`
 
 ## Topics
 

@@ -75,6 +75,7 @@ job4j/chapter_002/src/main/java/ru/job4j/tracker
 
 ## ToDo
 
+- [x] Implement date and time in menu.
 - [x] Implement actions when selecting menu items.
 - [ ] Implement sort data.
 
