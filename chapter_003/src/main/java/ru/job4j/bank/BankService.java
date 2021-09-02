@@ -1,6 +1,9 @@
 package ru.job4j.bank;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Задача: разработать модель для банковской системы.
@@ -54,14 +57,11 @@ public class BankService {
      * @return возвращает имя пользователя или null при его отсутствии.
      */
     public User findByPassport(String passport) {
-        User result = null;
-        for (User currentUser : users.keySet()) {
-            if (currentUser.getPassport().equals(passport)) {
-                result = currentUser;
-                break;
-            }
-        }
-        return result;
+        return users.keySet()
+                .stream()
+                .filter(user -> user.getPassport().equals(passport))
+                .findFirst()
+                .orElse(null);
     }
 
     /**
@@ -71,18 +71,15 @@ public class BankService {
      * @return возвращает номер счёта либо null при его отсутствии.
      */
     public Account findByRequisite(String passport, String requisite) {
-        Account result = null;
         User user = findByPassport(passport);
         if (user != null) {
-            List<Account> accounts = users.get(user);
-            for (Account account : accounts) {
-                if (account.getRequisite().equals(requisite)) {
-                    result = account;
-                    break;
-                }
-            }
+            return users.get(user)
+                    .stream()
+                    .filter(account -> account.getRequisite().equals(requisite))
+                    .findFirst()
+                    .orElse(null);
         }
-        return result;
+        return null;
     }
 
     /**
