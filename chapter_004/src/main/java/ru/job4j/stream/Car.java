@@ -7,7 +7,7 @@ package ru.job4j.stream;
  * @author Evgenii Kapaev
  * @since 03.09.21
  */
-public class CarBuilder {
+public class Car {
     private String carType;
     private int seats;
     private double engineVolume;
@@ -53,27 +53,27 @@ public class CarBuilder {
             return this;
         }
 
-        CarBuilder build() {
-            CarBuilder carBuilder = new CarBuilder();
-            carBuilder.carType = carType;
-            carBuilder.seats = seats;
-            carBuilder.engineVolume = engineVolume;
-            carBuilder.typeTransmission = typeTransmission;
-            carBuilder.tripComputer = tripComputer;
-            carBuilder.gpsNavigator = gpsNavigator;
-            return carBuilder;
+        Car build() {
+            Car car = new Car();
+            car.carType = carType;
+            car.seats = seats;
+            car.engineVolume = engineVolume;
+            car.typeTransmission = typeTransmission;
+            car.tripComputer = tripComputer;
+            car.gpsNavigator = gpsNavigator;
+            return car;
         }
     }
 
     public static void main(String[] args) {
-        CarBuilder carBuilder = new Builder().buildCarType("Cabriolet")
+        Car car = new Builder().buildCarType("Cabriolet")
                 .buildSeats(4)
                 .buildEngineVolume(3.3)
                 .buildTypeTransmission("Auto")
                 .buildTripComputer(true)
                 .buildGpsNavigator(true)
                 .build();
-        System.out.println(carBuilder);
+        System.out.println(car);
     }
 
     @Override
