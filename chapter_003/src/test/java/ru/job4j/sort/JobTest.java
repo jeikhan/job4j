@@ -2,10 +2,12 @@ package ru.job4j.sort;
 
 import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
 
 public class JobTest {
     @Test
@@ -18,7 +20,7 @@ public class JobTest {
 
         jobs.sort(new JobAscByName());
 
-        List<Job> expect = Arrays.asList(
+        List<Job> expect = List.of(
                 new Job("read", 3),
                 new Job("sleep", 4),
                 new Job("write", 5)
@@ -37,7 +39,7 @@ public class JobTest {
 
         jobs.sort(new JobDescByName());
 
-        List<Job> expect = Arrays.asList(
+        List<Job> expect = List.of(
                 new Job("write", 5),
                 new Job("sleep", 4),
                 new Job("read", 3)
@@ -56,7 +58,7 @@ public class JobTest {
 
         jobs.sort(new JobAscByPriority());
 
-        List<Job> expect = Arrays.asList(
+        List<Job> expect = List.of(
                 new Job("read", 3),
                 new Job("sleep", 4),
                 new Job("write", 5)
@@ -75,7 +77,7 @@ public class JobTest {
 
         jobs.sort(new JobDescByPriority());
 
-        List<Job> expect = Arrays.asList(
+        List<Job> expect = List.of(
                 new Job("write", 5),
                 new Job("sleep", 4),
                 new Job("read", 3)
@@ -93,9 +95,9 @@ public class JobTest {
         jobs.add(new Job("read", 4));
 
         Comparator<Job> comb = new JobAscByName().thenComparing(new JobAscByPriority());
-        Collections.sort(jobs, comb);
+        jobs.sort(comb);
 
-        List<Job> expect = Arrays.asList(
+        List<Job> expect = List.of(
                 new Job("read", 3),
                 new Job("read", 4),
                 new Job("read", 5)
