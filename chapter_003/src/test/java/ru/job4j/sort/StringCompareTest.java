@@ -2,16 +2,14 @@ package ru.job4j.sort;
 
 import org.junit.Test;
 
-import static org.hamcrest.Matchers.greaterThan;
-import static org.hamcrest.Matchers.lessThan;
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
 
 public class StringCompareTest {
     @Test
     public void whenStringsAreEqualThenZero() {
-        StringCompare compare = new StringCompare();
-        int rst = compare.compare(
+        StringCompare stringCompare = new StringCompare();
+        int rst = stringCompare.compare(
                 "Ivanov",
                 "Ivanov"
         );
@@ -20,8 +18,8 @@ public class StringCompareTest {
 
     @Test
     public void whenLeftLessThanRightResultShouldBeNegative() {
-        StringCompare compare = new StringCompare();
-        int rst = compare.compare(
+        StringCompare stringCompare = new StringCompare();
+        int rst = stringCompare.compare(
                 "Ivanov",
                 "Ivanova"
         );
@@ -30,8 +28,8 @@ public class StringCompareTest {
 
     @Test
     public void whenLeftGreaterThanRightResultShouldBePositive() {
-        StringCompare compare = new StringCompare();
-        int rst = compare.compare(
+        StringCompare stringCompare = new StringCompare();
+        int rst = stringCompare.compare(
                 "Petrov",
                 "Ivanova"
         );
@@ -40,8 +38,8 @@ public class StringCompareTest {
 
     @Test
     public void secondCharOfLeftGreaterThanRightShouldBePositive() {
-        StringCompare compare = new StringCompare();
-        int rst = compare.compare(
+        StringCompare stringCompare = new StringCompare();
+        int rst = stringCompare.compare(
                 "Petrov",
                 "Patrov"
         );
@@ -50,8 +48,8 @@ public class StringCompareTest {
 
     @Test
     public void secondCharOfLeftLessThanRightShouldBeNegative() {
-        StringCompare compare = new StringCompare();
-        int rst = compare.compare(
+        StringCompare stringCompare = new StringCompare();
+        int rst = stringCompare.compare(
                 "Patrova",
                 "Petrov"
         );
